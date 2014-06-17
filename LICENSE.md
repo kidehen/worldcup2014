@@ -18,6 +18,6 @@ URL of the denotes document that describes the license above: <http://creativeco
 
 <#didehen>
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> ;
-foaf:name "Daniel Idehen" .
+<http://xmlns.com/foaf/0.1/name> "Daniel Idehen" .
 
 ## Turtle End ##
