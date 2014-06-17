@@ -1,0 +1,6818 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<> 
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> ;
+<http://www.w3.org/1999/xhtml/vocab#alternate> <GlossaryOfTerms.txt> ;
+<http://www.w3.org/2000/01/rdf-schema#label> "World Cup 2014" ;
+<http://www.w3.org/2000/01/rdf-schema#comment> """Teams, Players, and Groups
+												""" ;
+<http://purl.org/dc/terms/created> "2014-01-03"^^<http://www.w3.org/2001/XMLSchema#date> ;
+<http://purl.org/dc/terms/modified> "2014-06-16"^^<http://www.w3.org/2001/XMLSchema#date> ;
+<http://xmlns.com/foaf/0.1/maker>  <#kidehen>, <#didehen> ;
+<http://www.w3.org/1999/xhtml/vocab#license> <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+<http://creativecommons.org/ns#attributionName> "Soccerologists" ;
+<http://creativecommons.org/ns#attributionURL> <http://kingsley.idehen.net/dataspace/person/kidehen#this>.
+
+
+<#julian-green> a foaf:Person ;
+	foaf:name "Julian Green" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "19"^^xsd:int ;
+	<#isMemberOf> <#teamusa> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamusa> a foaf:Group ;
+	foaf:name "USA National Soccer Team" ;
+	foaf:member <#julian-green> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/USA_national_football_team> .
+
+<#G> a foaf:Group ;
+	foaf:member <#teamusa> ;
+	foaf:name "Group: G" .
+
+<#deandre-yedlin> a foaf:Person ;
+	foaf:name "Deandre Yedlin" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "20"^^xsd:int ;
+	<#isMemberOf> <#teamusa> ;
+	<#hasPosition> "Defender" .
+
+<#teamusa> foaf:member <#deandre-yedlin> .
+
+<#john-brooks> a foaf:Person ;
+	foaf:name "John Brooks" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamusa> ;
+	<#hasPosition> "Defender" .
+
+<#teamusa> foaf:member <#john-brooks> .
+
+<#aron-johannsson> a foaf:Person ;
+	foaf:name "Aron Johannsson" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamusa> ;
+	<#hasPosition> "Forward" .
+
+<#teamusa> foaf:member <#aron-johannsson> .
+
+<#mix-diskerud> a foaf:Person ;
+	foaf:name "Mix Diskerud" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamusa> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamusa> foaf:member <#mix-diskerud> .
+
+<#jozy-altidore> a foaf:Person ;
+	foaf:name "Jozy Altidore" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamusa> ;
+	<#hasPosition> "Forward" .
+
+<#teamusa> foaf:member <#jozy-altidore> .
+
+<#timmy-chandler> a foaf:Person ;
+	foaf:name "Timmy Chandler" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamusa> ;
+	<#hasPosition> "Defender" .
+
+<#teamusa> foaf:member <#timmy-chandler> .
+
+<#omar-gonzalez> a foaf:Person ;
+	foaf:name "Omar Gonzalez" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamusa> ;
+	<#hasPosition> "Defender" .
+
+<#teamusa> foaf:member <#omar-gonzalez> .
+
+<#michael-bradley> a foaf:Person ;
+	foaf:name "Michael Bradley" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamusa> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamusa> foaf:member <#michael-bradley> .
+
+<#fabian-johnson> a foaf:Person ;
+	foaf:name "Fabian Johnson" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamusa> ;
+	<#hasPosition> "Defender" .
+
+<#teamusa> foaf:member <#fabian-johnson> .
+
+<#graham-zusi> a foaf:Person ;
+	foaf:name "Graham Zusi" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamusa> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamusa> foaf:member <#graham-zusi> .
+
+<#alejandro-bedoya> a foaf:Person ;
+	foaf:name "Alejandro Bedoya" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamusa> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamusa> foaf:member <#alejandro-bedoya> .
+
+<#matt-besler> a foaf:Person ;
+	foaf:name "Matt Besler" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamusa> ;
+	<#hasPosition> "Defender" .
+
+<#teamusa> foaf:member <#matt-besler> .
+
+<#geoff-cameron> a foaf:Person ;
+	foaf:name "Geoff Cameron" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamusa> ;
+	<#hasPosition> "Defender" .
+
+<#teamusa> foaf:member <#geoff-cameron> .
+
+<#brad-guzan> a foaf:Person ;
+	foaf:name "Brad Guzan" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamusa> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamusa> foaf:member <#brad-guzan> .
+
+<#chris-wondolowski> a foaf:Person ;
+	foaf:name "Chris Wondolowski" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamusa> ;
+	<#hasPosition> "Forward" .
+
+<#teamusa> foaf:member <#chris-wondolowski> .
+
+<#clint-dempsey> a foaf:Person ;
+	foaf:name "Clint Dempsey" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamusa> ;
+	<#hasPosition> "Forward" .
+
+<#teamusa> foaf:member <#clint-dempsey> .
+
+<#damarcus-beasley> a foaf:Person ;
+	foaf:name "Damarcus Beasley" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamusa> ;
+	<#hasPosition> "Defender" .
+
+<#teamusa> foaf:member <#damarcus-beasley> .
+
+<#jermaine-jones> a foaf:Person ;
+	foaf:name "Jermaine Jones" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamusa> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamusa> foaf:member <#jermaine-jones> .
+
+<#kyle-beckerman> a foaf:Person ;
+	foaf:name "Kyle Beckerman" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamusa> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamusa> foaf:member <#kyle-beckerman> .
+
+<#brad-davis> a foaf:Person ;
+	foaf:name "Brad Davis" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamusa> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamusa> foaf:member <#brad-davis> .
+
+<#tim-howard> a foaf:Person ;
+	foaf:name "Tim Howard" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "35"^^xsd:int ;
+	<#isMemberOf> <#teamusa> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamusa> foaf:member <#tim-howard> .
+
+<#nick-rimando> a foaf:Person ;
+	foaf:name "Nick Rimando" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "35"^^xsd:int ;
+	<#isMemberOf> <#teamusa> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamusa> foaf:member <#nick-rimando> .
+
+<#jose-gimenez> a foaf:Person ;
+	foaf:name "Jose Gimenez" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "19"^^xsd:int ;
+	<#isMemberOf> <#teamuruguay> ;
+	<#hasPosition> "Defender" .
+
+<#teamuruguay> a foaf:Group ;
+	foaf:name "Uruguay National Soccer Team" ;
+	foaf:member <#jose-gimenez> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Uruguay_national_football_team> .
+
+<#D> a foaf:Group ;
+	foaf:member <#teamuruguay> ;
+	foaf:name "Group: D" .
+
+<#abel-hernandez> a foaf:Person ;
+	foaf:name "Abel Hernandez" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamuruguay> ;
+	<#hasPosition> "Forward" .
+
+<#teamuruguay> foaf:member <#abel-hernandez> .
+
+<#sebastian-coates> a foaf:Person ;
+	foaf:name "Sebastian Coates" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamuruguay> ;
+	<#hasPosition> "Defender" .
+
+<#teamuruguay> foaf:member <#sebastian-coates> .
+
+<#gaston-ramirez> a foaf:Person ;
+	foaf:name "Gaston Ramirez" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamuruguay> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamuruguay> foaf:member <#gaston-ramirez> .
+
+<#nicolas-lodeiro> a foaf:Person ;
+	foaf:name "Nicolas Lodeiro" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamuruguay> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamuruguay> foaf:member <#nicolas-lodeiro> .
+
+<#luis-suarez> a foaf:Person ;
+	foaf:name "Luis Suarez" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamuruguay> ;
+	<#hasPosition> "Forward" .
+
+<#teamuruguay> foaf:member <#luis-suarez> .
+
+<#cristhian-stuani> a foaf:Person ;
+	foaf:name "Cristhian Stuani" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamuruguay> ;
+	<#hasPosition> "Forward" .
+
+<#teamuruguay> foaf:member <#cristhian-stuani> .
+
+<#edinson-cavani> a foaf:Person ;
+	foaf:name "Edinson Cavani" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamuruguay> ;
+	<#hasPosition> "Forward" .
+
+<#teamuruguay> foaf:member <#edinson-cavani> .
+
+<#martin-caceres> a foaf:Person ;
+	foaf:name "Martin Caceres" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamuruguay> ;
+	<#hasPosition> "Defender" .
+
+<#teamuruguay> foaf:member <#martin-caceres> .
+
+<#cristian-rodriguez> a foaf:Person ;
+	foaf:name "Cristian Rodriguez" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamuruguay> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamuruguay> foaf:member <#cristian-rodriguez> .
+
+<#alvaro-pereira> a foaf:Person ;
+	foaf:name "Alvaro Pereira" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamuruguay> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamuruguay> foaf:member <#alvaro-pereira> .
+
+<#diego-godin> a foaf:Person ;
+	foaf:name "Diego Godin" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamuruguay> ;
+	<#hasPosition> "Defender" .
+
+<#teamuruguay> foaf:member <#diego-godin> .
+
+<#fernando-muslera> a foaf:Person ;
+	foaf:name "Fernando Muslera" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamuruguay> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamuruguay> foaf:member <#fernando-muslera> .
+
+<#alvaro-gonzalez> a foaf:Person ;
+	foaf:name "Alvaro Gonzalez" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamuruguay> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamuruguay> foaf:member <#alvaro-gonzalez> .
+
+<#walter-gargano> a foaf:Person ;
+	foaf:name "Walter Gargano" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamuruguay> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamuruguay> foaf:member <#walter-gargano> .
+
+<#jorge-fucile> a foaf:Person ;
+	foaf:name "Jorge Fucile" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamuruguay> ;
+	<#hasPosition> "Defender" .
+
+<#teamuruguay> foaf:member <#jorge-fucile> .
+
+<#maximiliano-pereira> a foaf:Person ;
+	foaf:name "Maximiliano Pereira" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamuruguay> ;
+	<#hasPosition> "Defender" .
+
+<#teamuruguay> foaf:member <#maximiliano-pereira> .
+
+<#martin-silva> a foaf:Person ;
+	foaf:name "Martin Silva" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamuruguay> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamuruguay> foaf:member <#martin-silva> .
+
+<#egidio-arevalo> a foaf:Person ;
+	foaf:name "Egidio Arevalo" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamuruguay> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamuruguay> foaf:member <#egidio-arevalo> .
+
+<#rodrigo-munoz> a foaf:Person ;
+	foaf:name "Rodrigo Munoz" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamuruguay> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamuruguay> foaf:member <#rodrigo-munoz> .
+
+<#diego-lugano> a foaf:Person ;
+	foaf:name "Diego Lugano" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teamuruguay> ;
+	<#hasPosition> "Defender" .
+
+<#teamuruguay> foaf:member <#diego-lugano> .
+
+<#diego-perez> a foaf:Person ;
+	foaf:name "Diego Perez" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "34"^^xsd:int ;
+	<#isMemberOf> <#teamuruguay> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamuruguay> foaf:member <#diego-perez> .
+
+<#diego-forlan> a foaf:Person ;
+	foaf:name "Diego Forlan" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "35"^^xsd:int ;
+	<#isMemberOf> <#teamuruguay> ;
+	<#hasPosition> "Forward" .
+
+<#teamuruguay> foaf:member <#diego-forlan> .
+
+<#josip-drmic> a foaf:Person ;
+	foaf:name "Josip Drmic" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamswitzerland> ;
+	<#hasPosition> "Forward" .
+
+<#teamswitzerland> a foaf:Group ;
+	foaf:name "Switzerland National Soccer Team" ;
+	foaf:member <#josip-drmic> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Switzerland_national_football_team> .
+
+<#E> a foaf:Group ;
+	foaf:member <#teamswitzerland> ;
+	foaf:name "Group: E" .
+
+<#granit-xhaka> a foaf:Person ;
+	foaf:name "Granit Xhaka" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamswitzerland> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamswitzerland> foaf:member <#granit-xhaka> .
+
+<#ricardo-rodriguez> a foaf:Person ;
+	foaf:name "Ricardo Rodriguez" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamswitzerland> ;
+	<#hasPosition> "Defender" .
+
+<#teamswitzerland> foaf:member <#ricardo-rodriguez> .
+
+<#fabian-schaer> a foaf:Person ;
+	foaf:name "Fabian Schaer" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamswitzerland> ;
+	<#hasPosition> "Defender" .
+
+<#teamswitzerland> foaf:member <#fabian-schaer> .
+
+<#xherdan-shaqiri> a foaf:Person ;
+	foaf:name "Xherdan Shaqiri" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamswitzerland> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamswitzerland> foaf:member <#xherdan-shaqiri> .
+
+<#haris-seferovic> a foaf:Person ;
+	foaf:name "Haris Seferovic" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamswitzerland> ;
+	<#hasPosition> "Forward" .
+
+<#teamswitzerland> foaf:member <#haris-seferovic> .
+
+<#michael-lang> a foaf:Person ;
+	foaf:name "Michael Lang" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamswitzerland> ;
+	<#hasPosition> "Defender" .
+
+<#teamswitzerland> foaf:member <#michael-lang> .
+
+<#admir-mehmedi> a foaf:Person ;
+	foaf:name "Admir Mehmedi" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamswitzerland> ;
+	<#hasPosition> "Forward" .
+
+<#teamswitzerland> foaf:member <#admir-mehmedi> .
+
+<#roman-buerki> a foaf:Person ;
+	foaf:name "Roman Buerki" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamswitzerland> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamswitzerland> foaf:member <#roman-buerki> .
+
+<#mario-gavranovic> a foaf:Person ;
+	foaf:name "Mario Gavranovic" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamswitzerland> ;
+	<#hasPosition> "Forward" .
+
+<#teamswitzerland> foaf:member <#mario-gavranovic> .
+
+<#valentin-stocker> a foaf:Person ;
+	foaf:name "Valentin Stocker" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamswitzerland> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamswitzerland> foaf:member <#valentin-stocker> .
+
+<#yann-sommer> a foaf:Person ;
+	foaf:name "Yann Sommer" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamswitzerland> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamswitzerland> foaf:member <#yann-sommer> .
+
+<#gelson-fernandes> a foaf:Person ;
+	foaf:name "Gelson Fernandes" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamswitzerland> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamswitzerland> foaf:member <#gelson-fernandes> .
+
+<#johan-djourou> a foaf:Person ;
+	foaf:name "Johan Djourou" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamswitzerland> ;
+	<#hasPosition> "Defender" .
+
+<#teamswitzerland> foaf:member <#johan-djourou> .
+
+<#blerim-dzemaili> a foaf:Person ;
+	foaf:name "Blerim Dzemaili" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamswitzerland> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamswitzerland> foaf:member <#blerim-dzemaili> .
+
+<#reto-ziegler> a foaf:Person ;
+	foaf:name "Reto Ziegler" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamswitzerland> ;
+	<#hasPosition> "Defender" .
+
+<#teamswitzerland> foaf:member <#reto-ziegler> .
+
+<#tranquillo-barnetta> a foaf:Person ;
+	foaf:name "Tranquillo Barnetta" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamswitzerland> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamswitzerland> foaf:member <#tranquillo-barnetta> .
+
+<#philippe-senderos> a foaf:Person ;
+	foaf:name "Philippe Senderos" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamswitzerland> ;
+	<#hasPosition> "Defender" .
+
+<#teamswitzerland> foaf:member <#philippe-senderos> .
+
+<#gokhan-inler> a foaf:Person ;
+	foaf:name "Gokhan Inler" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamswitzerland> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamswitzerland> foaf:member <#gokhan-inler> .
+
+<#valon-behrami> a foaf:Person ;
+	foaf:name "Valon Behrami" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamswitzerland> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamswitzerland> foaf:member <#valon-behrami> .
+
+<#stephan-lichtsteiner> a foaf:Person ;
+	foaf:name "Stephan Lichtsteiner" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamswitzerland> ;
+	<#hasPosition> "Defender" .
+
+<#teamswitzerland> foaf:member <#stephan-lichtsteiner> .
+
+<#diego-benaglio> a foaf:Person ;
+	foaf:name "Diego Benaglio" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamswitzerland> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamswitzerland> foaf:member <#diego-benaglio> .
+
+<#steve-von-bergen> a foaf:Person ;
+	foaf:name "Steve Von Bergen" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamswitzerland> ;
+	<#hasPosition> "Defender" .
+
+<#teamswitzerland> foaf:member <#steve-von-bergen> .
+
+<#koke> a foaf:Person ;
+	foaf:name "Koke" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamspain> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamspain> a foaf:Group ;
+	foaf:name "Spain National Soccer Team" ;
+	foaf:member <#koke> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Spain_national_football_team> .
+
+<#B> a foaf:Group ;
+	foaf:member <#teamspain> ;
+	foaf:name "Group: B" .
+
+<#david-de-gea> a foaf:Person ;
+	foaf:name "David De Gea" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamspain> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamspain> foaf:member <#david-de-gea> .
+
+<#cesar-azpilicueta> a foaf:Person ;
+	foaf:name "Cesar Azpilicueta" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamspain> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamspain> foaf:member <#cesar-azpilicueta> .
+
+<#jordi-alba> a foaf:Person ;
+	foaf:name "Jordi Alba" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamspain> ;
+	<#hasPosition> "Defender" .
+
+<#teamspain> foaf:member <#jordi-alba> .
+
+<#javi-martinez> a foaf:Person ;
+	foaf:name "Javi Martinez" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamspain> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamspain> foaf:member <#javi-martinez> .
+
+<#sergio-busquets> a foaf:Person ;
+	foaf:name "Sergio Busquets" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamspain> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamspain> foaf:member <#sergio-busquets> .
+
+<#diego-costa> a foaf:Person ;
+	foaf:name "Diego Costa" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamspain> ;
+	<#hasPosition> "Forward" .
+
+<#teamspain> foaf:member <#diego-costa> .
+
+<#pedro-rodriguez> a foaf:Person ;
+	foaf:name "Pedro Rodriguez" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamspain> ;
+	<#hasPosition> "Forward" .
+
+<#teamspain> foaf:member <#pedro-rodriguez> .
+
+<#juan-mata> a foaf:Person ;
+	foaf:name "Juan Mata" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamspain> ;
+	<#hasPosition> "Forward" .
+
+<#teamspain> foaf:member <#juan-mata> .
+
+<#cesc-fabregas> a foaf:Person ;
+	foaf:name "Cesc Fabregas" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamspain> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamspain> foaf:member <#cesc-fabregas> .
+
+<#gerard-pique> a foaf:Person ;
+	foaf:name "Gerard Pique" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamspain> ;
+	<#hasPosition> "Defender" .
+
+<#teamspain> foaf:member <#gerard-pique> .
+
+<#david-silva> a foaf:Person ;
+	foaf:name "David Silva" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamspain> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamspain> foaf:member <#david-silva> .
+
+<#sergio-ramos> a foaf:Person ;
+	foaf:name "Sergio Ramos" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamspain> ;
+	<#hasPosition> "Defender" .
+
+<#teamspain> foaf:member <#sergio-ramos> .
+
+<#raul-albiol> a foaf:Person ;
+	foaf:name "Raul Albiol" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamspain> ;
+	<#hasPosition> "Defender" .
+
+<#teamspain> foaf:member <#raul-albiol> .
+
+<#santi-cazorla> a foaf:Person ;
+	foaf:name "Santi Cazorla" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamspain> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamspain> foaf:member <#santi-cazorla> .
+
+<#juanfran> a foaf:Person ;
+	foaf:name "Juanfran" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamspain> ;
+	<#hasPosition> "Defender" .
+
+<#teamspain> foaf:member <#juanfran> .
+
+<#fernando-torres> a foaf:Person ;
+	foaf:name "Fernando Torres" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamspain> ;
+	<#hasPosition> "Forward" .
+
+<#teamspain> foaf:member <#fernando-torres> .
+
+<#andres-iniesta> a foaf:Person ;
+	foaf:name "Andres Iniesta" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamspain> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamspain> foaf:member <#andres-iniesta> .
+
+<#pepe-reina> a foaf:Person ;
+	foaf:name "Pepe Reina" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamspain> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamspain> foaf:member <#pepe-reina> .
+
+<#david-villa> a foaf:Person ;
+	foaf:name "David Villa" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamspain> ;
+	<#hasPosition> "Forward" .
+
+<#teamspain> foaf:member <#david-villa> .
+
+<#xabi-alonso> a foaf:Person ;
+	foaf:name "Xabi Alonso" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamspain> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamspain> foaf:member <#xabi-alonso> .
+
+<#iker-casillas> a foaf:Person ;
+	foaf:name "Iker Casillas" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teamspain> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamspain> foaf:member <#iker-casillas> .
+
+<#xavi-hernandez> a foaf:Person ;
+	foaf:name "Xavi Hernandez" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "34"^^xsd:int ;
+	<#isMemberOf> <#teamspain> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamspain> foaf:member <#xavi-hernandez> .
+
+<#son-heungmin> a foaf:Person ;
+	foaf:name "Son Heungmin" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamsouth-korea> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamsouth-korea> a foaf:Group ;
+	foaf:name "South Korea National Soccer Team" ;
+	foaf:member <#son-heungmin> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/South_Korea_national_football_team> .
+
+<#H> a foaf:Group ;
+	foaf:member <#teamsouth-korea> ;
+	foaf:name "Group: H" .
+
+<#ji-dongwon> a foaf:Person ;
+	foaf:name "Ji Dongwon" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamsouth-korea> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamsouth-korea> foaf:member <#ji-dongwon> .
+
+<#kim-seunggyu> a foaf:Person ;
+	foaf:name "Kim Seunggyu" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamsouth-korea> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamsouth-korea> foaf:member <#kim-seunggyu> .
+
+<#kim-bokyung> a foaf:Person ;
+	foaf:name "Kim Bokyung" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamsouth-korea> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamsouth-korea> foaf:member <#kim-bokyung> .
+
+<#kim-younggwon> a foaf:Person ;
+	foaf:name "Kim Younggwon" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamsouth-korea> ;
+	<#hasPosition> "Defender" .
+
+<#teamsouth-korea> foaf:member <#kim-younggwon> .
+
+<#hong-jeongho> a foaf:Person ;
+	foaf:name "Hong Jeongho" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamsouth-korea> ;
+	<#hasPosition> "Defender" .
+
+<#teamsouth-korea> foaf:member <#hong-jeongho> .
+
+<#han-kookyoung> a foaf:Person ;
+	foaf:name "Han Kookyoung" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamsouth-korea> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamsouth-korea> foaf:member <#han-kookyoung> .
+
+<#yun-sukyoung> a foaf:Person ;
+	foaf:name "Yun Sukyoung" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamsouth-korea> ;
+	<#hasPosition> "Defender" .
+
+<#teamsouth-korea> foaf:member <#yun-sukyoung> .
+
+<#hwang-seokho> a foaf:Person ;
+	foaf:name "Hwang Seokho" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamsouth-korea> ;
+	<#hasPosition> "Defender" .
+
+<#teamsouth-korea> foaf:member <#hwang-seokho> .
+
+<#koo-jacheol> a foaf:Person ;
+	foaf:name "Koo Jacheol" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamsouth-korea> ;
+	<#hasPosition> "Forward" .
+
+<#teamsouth-korea> foaf:member <#koo-jacheol> .
+
+<#lee-chungyong> a foaf:Person ;
+	foaf:name "Lee Chungyong" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamsouth-korea> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamsouth-korea> foaf:member <#lee-chungyong> .
+
+<#ki-sungyueng> a foaf:Person ;
+	foaf:name "Ki Sungyueng" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamsouth-korea> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamsouth-korea> foaf:member <#ki-sungyueng> .
+
+<#park-jongwoo> a foaf:Person ;
+	foaf:name "Park Jongwoo" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamsouth-korea> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamsouth-korea> foaf:member <#park-jongwoo> .
+
+<#lee-bumyoung> a foaf:Person ;
+	foaf:name "Lee Bumyoung" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamsouth-korea> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamsouth-korea> foaf:member <#lee-bumyoung> .
+
+<#kim-shinwook> a foaf:Person ;
+	foaf:name "Kim Shinwook" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamsouth-korea> ;
+	<#hasPosition> "Forward" .
+
+<#teamsouth-korea> foaf:member <#kim-shinwook> .
+
+<#lee-yong> a foaf:Person ;
+	foaf:name "Lee Yong" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamsouth-korea> ;
+	<#hasPosition> "Defender" .
+
+<#teamsouth-korea> foaf:member <#lee-yong> .
+
+<#park-jooho> a foaf:Person ;
+	foaf:name "Park Jooho" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamsouth-korea> ;
+	<#hasPosition> "Defender" .
+
+<#teamsouth-korea> foaf:member <#park-jooho> .
+
+<#park-chuyoung> a foaf:Person ;
+	foaf:name "Park Chuyoung" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamsouth-korea> ;
+	<#hasPosition> "Forward" .
+
+<#teamsouth-korea> foaf:member <#park-chuyoung> .
+
+<#kim-changsoo> a foaf:Person ;
+	foaf:name "Kim Changsoo" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamsouth-korea> ;
+	<#hasPosition> "Defender" .
+
+<#teamsouth-korea> foaf:member <#kim-changsoo> .
+
+<#lee-keunho> a foaf:Person ;
+	foaf:name "Lee Keunho" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamsouth-korea> ;
+	<#hasPosition> "Forward" .
+
+<#teamsouth-korea> foaf:member <#lee-keunho> .
+
+<#jung-sungryong> a foaf:Person ;
+	foaf:name "Jung Sungryong" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamsouth-korea> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamsouth-korea> foaf:member <#jung-sungryong> .
+
+<#ha-daesung> a foaf:Person ;
+	foaf:name "Ha Daesung" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamsouth-korea> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamsouth-korea> foaf:member <#ha-daesung> .
+
+<#kwak-taehwi> a foaf:Person ;
+	foaf:name "Kwak Taehwi" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamsouth-korea> ;
+	<#hasPosition> "Defender" .
+
+<#teamsouth-korea> foaf:member <#kwak-taehwi> .
+
+<#maksim-kanunnikov> a foaf:Person ;
+	foaf:name "Maksim Kanunnikov" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamrussia> ;
+	<#hasPosition> "Forward" .
+
+<#teamrussia> a foaf:Group ;
+	foaf:name "Russia National Soccer Team" ;
+	foaf:member <#maksim-kanunnikov> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Russia_national_football_team> .
+
+<#H> foaf:member <#teamrussia> .
+
+<#oleg-shatov> a foaf:Person ;
+	foaf:name "Oleg Shatov" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamrussia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamrussia> foaf:member <#oleg-shatov> .
+
+<#alexander-kokorin> a foaf:Person ;
+	foaf:name "Alexander Kokorin" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamrussia> ;
+	<#hasPosition> "Forward" .
+
+<#teamrussia> foaf:member <#alexander-kokorin> .
+
+<#georgy-shchennikov> a foaf:Person ;
+	foaf:name "Georgy Shchennikov" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamrussia> ;
+	<#hasPosition> "Defender" .
+
+<#teamrussia> foaf:member <#georgy-shchennikov> .
+
+<#alan-dzagoev> a foaf:Person ;
+	foaf:name "Alan Dzagoev" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamrussia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamrussia> foaf:member <#alan-dzagoev> .
+
+<#yury-lodygin> a foaf:Person ;
+	foaf:name "Yury Lodygin" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamrussia> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamrussia> foaf:member <#yury-lodygin> .
+
+<#andrey-semenov> a foaf:Person ;
+	foaf:name "Andrey Semenov" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamrussia> ;
+	<#hasPosition> "Defender" .
+
+<#teamrussia> foaf:member <#andrey-semenov> .
+
+<#alexey-ionov> a foaf:Person ;
+	foaf:name "Alexey Ionov" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamrussia> ;
+	<#hasPosition> "Forward" .
+
+<#teamrussia> foaf:member <#alexey-ionov> .
+
+<#denis-glushakov> a foaf:Person ;
+	foaf:name "Denis Glushakov" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamrussia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamrussia> foaf:member <#denis-glushakov> .
+
+<#dmitry-kombarov> a foaf:Person ;
+	foaf:name "Dmitry Kombarov" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamrussia> ;
+	<#hasPosition> "Defender" .
+
+<#teamrussia> foaf:member <#dmitry-kombarov> .
+
+<#aleksei-kozlov> a foaf:Person ;
+	foaf:name "Aleksei Kozlov" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamrussia> ;
+	<#hasPosition> "Defender" .
+
+<#teamrussia> foaf:member <#aleksei-kozlov> .
+
+<#vladimir-granat> a foaf:Person ;
+	foaf:name "Vladimir Granat" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamrussia> ;
+	<#hasPosition> "Defender" .
+
+<#teamrussia> foaf:member <#vladimir-granat> .
+
+<#victor-fayzulin> a foaf:Person ;
+	foaf:name "Victor Fayzulin" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamrussia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamrussia> foaf:member <#victor-fayzulin> .
+
+<#igor-akinfeev> a foaf:Person ;
+	foaf:name "Igor Akinfeev" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamrussia> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamrussia> foaf:member <#igor-akinfeev> .
+
+<#alexander-samedov> a foaf:Person ;
+	foaf:name "Alexander Samedov" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamrussia> ;
+	<#hasPosition> "Forward" .
+
+<#teamrussia> foaf:member <#alexander-samedov> .
+
+<#yury-zhirkov> a foaf:Person ;
+	foaf:name "Yury Zhirkov" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamrussia> ;
+	<#hasPosition> "Forward" .
+
+<#teamrussia> foaf:member <#yury-zhirkov> .
+
+<#andrey-eshchenko> a foaf:Person ;
+	foaf:name "Andrey Eshchenko" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamrussia> ;
+	<#hasPosition> "Defender" .
+
+<#teamrussia> foaf:member <#andrey-eshchenko> .
+
+<#igor-denisov> a foaf:Person ;
+	foaf:name "Igor Denisov" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamrussia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamrussia> foaf:member <#igor-denisov> .
+
+<#aleksandr-kerzhakov> a foaf:Person ;
+	foaf:name "Aleksandr Kerzhakov" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamrussia> ;
+	<#hasPosition> "Forward" .
+
+<#teamrussia> foaf:member <#aleksandr-kerzhakov> .
+
+<#roman-shirokov> a foaf:Person ;
+	foaf:name "Roman Shirokov" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamrussia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamrussia> foaf:member <#roman-shirokov> .
+
+<#vasily-berezutskiy> a foaf:Person ;
+	foaf:name "Vasily Berezutskiy" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamrussia> ;
+	<#hasPosition> "Defender" .
+
+<#teamrussia> foaf:member <#vasily-berezutskiy> .
+
+<#sergey-ryzhikov> a foaf:Person ;
+	foaf:name "Sergey Ryzhikov" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teamrussia> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamrussia> foaf:member <#sergey-ryzhikov> .
+
+<#sergey-ignashevich> a foaf:Person ;
+	foaf:name "Sergey Ignashevich" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "34"^^xsd:int ;
+	<#isMemberOf> <#teamrussia> ;
+	<#hasPosition> "Defender" .
+
+<#teamrussia> foaf:member <#sergey-ignashevich> .
+
+<#rafa> a foaf:Person ;
+	foaf:name "Rafa" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamportugal> ;
+	<#hasPosition> "Forward" .
+
+<#teamportugal> a foaf:Group ;
+	foaf:name "Portugal National Soccer Team" ;
+	foaf:member <#rafa> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Portugal_national_football_team> .
+
+<#G> foaf:member <#teamportugal> .
+
+<#william> a foaf:Person ;
+	foaf:name "William" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamportugal> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamportugal> foaf:member <#william> .
+
+<#andre-almeida> a foaf:Person ;
+	foaf:name "Andre Almeida" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamportugal> ;
+	<#hasPosition> "Defender" .
+
+<#teamportugal> foaf:member <#andre-almeida> .
+
+<#fabio-coentrao> a foaf:Person ;
+	foaf:name "Fabio Coentrao" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamportugal> ;
+	<#hasPosition> "Defender" .
+
+<#teamportugal> foaf:member <#fabio-coentrao> .
+
+<#eder> a foaf:Person ;
+	foaf:name "Eder" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamportugal> ;
+	<#hasPosition> "Forward" .
+
+<#teamportugal> foaf:member <#eder> .
+
+<#rui-patricio> a foaf:Person ;
+	foaf:name "Rui Patricio" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamportugal> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamportugal> foaf:member <#rui-patricio> .
+
+<#luis-neto> a foaf:Person ;
+	foaf:name "Luis Neto" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamportugal> ;
+	<#hasPosition> "Defender" .
+
+<#teamportugal> foaf:member <#luis-neto> .
+
+<#nani> a foaf:Person ;
+	foaf:name "Nani" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamportugal> ;
+	<#hasPosition> "Forward" .
+
+<#teamportugal> foaf:member <#nani> .
+
+<#joao-moutinho> a foaf:Person ;
+	foaf:name "Joao Moutinho" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamportugal> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamportugal> foaf:member <#joao-moutinho> .
+
+<#miguel-veloso> a foaf:Person ;
+	foaf:name "Miguel Veloso" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamportugal> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamportugal> foaf:member <#miguel-veloso> .
+
+<#vieirinha> a foaf:Person ;
+	foaf:name "Vieirinha" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamportugal> ;
+	<#hasPosition> "Forward" .
+
+<#teamportugal> foaf:member <#vieirinha> .
+
+<#cristiano-ronaldo> a foaf:Person ;
+	foaf:name "Cristiano Ronaldo" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamportugal> ;
+	<#hasPosition> "Forward" .
+
+<#teamportugal> foaf:member <#cristiano-ronaldo> .
+
+<#varela> a foaf:Person ;
+	foaf:name "Varela" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamportugal> ;
+	<#hasPosition> "Forward" .
+
+<#teamportugal> foaf:member <#varela> .
+
+<#ruben-amorim> a foaf:Person ;
+	foaf:name "Ruben Amorim" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamportugal> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamportugal> foaf:member <#ruben-amorim> .
+
+<#hugo-almeida> a foaf:Person ;
+	foaf:name "Hugo Almeida" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamportugal> ;
+	<#hasPosition> "Forward" .
+
+<#teamportugal> foaf:member <#hugo-almeida> .
+
+<#joao-pereira> a foaf:Person ;
+	foaf:name "Joao Pereira" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamportugal> ;
+	<#hasPosition> "Defender" .
+
+<#teamportugal> foaf:member <#joao-pereira> .
+
+<#helder-postiga> a foaf:Person ;
+	foaf:name "Helder Postiga" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamportugal> ;
+	<#hasPosition> "Forward" .
+
+<#teamportugal> foaf:member <#helder-postiga> .
+
+<#raul-meireles> a foaf:Person ;
+	foaf:name "Raul Meireles" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamportugal> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamportugal> foaf:member <#raul-meireles> .
+
+<#pepe> a foaf:Person ;
+	foaf:name "Pepe" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamportugal> ;
+	<#hasPosition> "Defender" .
+
+<#teamportugal> foaf:member <#pepe> .
+
+<#eduardo> a foaf:Person ;
+	foaf:name "Eduardo" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamportugal> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamportugal> foaf:member <#eduardo> .
+
+<#bruno-alves> a foaf:Person ;
+	foaf:name "Bruno Alves" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamportugal> ;
+	<#hasPosition> "Defender" .
+
+<#teamportugal> foaf:member <#bruno-alves> .
+
+<#beto> a foaf:Person ;
+	foaf:name "Beto" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamportugal> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamportugal> foaf:member <#beto> .
+
+<#ricardo-costa> a foaf:Person ;
+	foaf:name "Ricardo Costa" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teamportugal> ;
+	<#hasPosition> "Defender" .
+
+<#teamportugal> foaf:member <#ricardo-costa> .
+
+<#kenneth-omeruo> a foaf:Person ;
+	foaf:name "Kenneth Omeruo" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "20"^^xsd:int ;
+	<#isMemberOf> <#teamnigeria> ;
+	<#hasPosition> "Defender" .
+
+<#teamnigeria> a foaf:Group ;
+	foaf:name "Nigeria National Soccer Team" ;
+	foaf:member <#kenneth-omeruo> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Nigeria_national_football_team> .
+
+<#F> a foaf:Group ;
+	foaf:member <#teamnigeria> ;
+	foaf:name "Group: F" .
+
+<#ahmed-musa> a foaf:Person ;
+	foaf:name "Ahmed Musa" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamnigeria> ;
+	<#hasPosition> "Forward" .
+
+<#teamnigeria> foaf:member <#ahmed-musa> .
+
+<#ogenyi-onazi> a foaf:Person ;
+	foaf:name "Ogenyi Onazi" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamnigeria> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamnigeria> foaf:member <#ogenyi-onazi> .
+
+<#ramon-azeez> a foaf:Person ;
+	foaf:name "Ramon Azeez" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamnigeria> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamnigeria> foaf:member <#ramon-azeez> .
+
+<#michael-babatunde> a foaf:Person ;
+	foaf:name "Michael Babatunde" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamnigeria> ;
+	<#hasPosition> "Forward" .
+
+<#teamnigeria> foaf:member <#michael-babatunde> .
+
+<#uche-nwofor> a foaf:Person ;
+	foaf:name "Uche Nwofor" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamnigeria> ;
+	<#hasPosition> "Forward" .
+
+<#teamnigeria> foaf:member <#uche-nwofor> .
+
+<#victor-moses> a foaf:Person ;
+	foaf:name "Victor Moses" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamnigeria> ;
+	<#hasPosition> "Forward" .
+
+<#teamnigeria> foaf:member <#victor-moses> .
+
+<#godfrey-oboabona> a foaf:Person ;
+	foaf:name "Godfrey Oboabona" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamnigeria> ;
+	<#hasPosition> "Defender" .
+
+<#teamnigeria> foaf:member <#godfrey-oboabona> .
+
+<#ebenezer-odunlami> a foaf:Person ;
+	foaf:name "Ebenezer Odunlami" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamnigeria> ;
+	<#hasPosition> "Defender" .
+
+<#teamnigeria> foaf:member <#ebenezer-odunlami> .
+
+<#ruben-gabriel> a foaf:Person ;
+	foaf:name "Ruben Gabriel" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamnigeria> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamnigeria> foaf:member <#ruben-gabriel> .
+
+<#juwon-oshaniwa> a foaf:Person ;
+	foaf:name "Juwon Oshaniwa" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamnigeria> ;
+	<#hasPosition> "Defender" .
+
+<#teamnigeria> foaf:member <#juwon-oshaniwa> .
+
+<#okechukwu-uchebo> a foaf:Person ;
+	foaf:name "Okechukwu Uchebo" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamnigeria> ;
+	<#hasPosition> "Forward" .
+
+<#teamnigeria> foaf:member <#okechukwu-uchebo> .
+
+<#azubuike-egwuekwe> a foaf:Person ;
+	foaf:name "Azubuike Egwuekwe" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamnigeria> ;
+	<#hasPosition> "Defender" .
+
+<#teamnigeria> foaf:member <#azubuike-egwuekwe> .
+
+<#efe-ambrose> a foaf:Person ;
+	foaf:name "Efe Ambrose" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamnigeria> ;
+	<#hasPosition> "Defender" .
+
+<#teamnigeria> foaf:member <#efe-ambrose> .
+
+<#uwa-echiejile> a foaf:Person ;
+	foaf:name "Uwa Echiejile" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamnigeria> ;
+	<#hasPosition> "Defender" .
+
+<#teamnigeria> foaf:member <#uwa-echiejile> .
+
+<#emmanuel-emenike> a foaf:Person ;
+	foaf:name "Emmanuel Emenike" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamnigeria> ;
+	<#hasPosition> "Forward" .
+
+<#teamnigeria> foaf:member <#emmanuel-emenike> .
+
+<#john-obi-mikel> a foaf:Person ;
+	foaf:name "John Obi Mikel" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamnigeria> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamnigeria> foaf:member <#john-obi-mikel> .
+
+<#chigozie-agbim> a foaf:Person ;
+	foaf:name "Chigozie Agbim" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamnigeria> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamnigeria> foaf:member <#chigozie-agbim> .
+
+<#austine-ejide> a foaf:Person ;
+	foaf:name "Austine Ejide" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamnigeria> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamnigeria> foaf:member <#austine-ejide> .
+
+<#vincent-enyeama> a foaf:Person ;
+	foaf:name "Vincent Enyeama" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamnigeria> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamnigeria> foaf:member <#vincent-enyeama> .
+
+<#shola-ameobi> a foaf:Person ;
+	foaf:name "Shola Ameobi" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamnigeria> ;
+	<#hasPosition> "Forward" .
+
+<#teamnigeria> foaf:member <#shola-ameobi> .
+
+<#peter-odemwingie> a foaf:Person ;
+	foaf:name "Peter Odemwingie" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamnigeria> ;
+	<#hasPosition> "Forward" .
+
+<#teamnigeria> foaf:member <#peter-odemwingie> .
+
+<#joseph-yobo> a foaf:Person ;
+	foaf:name "Joseph Yobo" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teamnigeria> ;
+	<#hasPosition> "Defender" .
+
+<#teamnigeria> foaf:member <#joseph-yobo> .
+
+<#terence-kongolo> a foaf:Person ;
+	foaf:name "Terence Kongolo" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "20"^^xsd:int ;
+	<#isMemberOf> <#teamnetherlands> ;
+	<#hasPosition> "Defender" .
+
+<#teamnetherlands> a foaf:Group ;
+	foaf:name "Netherlands National Soccer Team" ;
+	foaf:member <#terence-kongolo> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Netherlands_national_football_team> .
+
+<#B> foaf:member <#teamnetherlands> .
+
+<#memphis-depay> a foaf:Person ;
+	foaf:name "Memphis Depay" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "20"^^xsd:int ;
+	<#isMemberOf> <#teamnetherlands> ;
+	<#hasPosition> "Forward" .
+
+<#teamnetherlands> foaf:member <#memphis-depay> .
+
+<#bruno-martins-indi> a foaf:Person ;
+	foaf:name "Bruno Martins Indi" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamnetherlands> ;
+	<#hasPosition> "Defender" .
+
+<#teamnetherlands> foaf:member <#bruno-martins-indi> .
+
+<#stefan-de-vrij> a foaf:Person ;
+	foaf:name "Stefan De Vrij" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamnetherlands> ;
+	<#hasPosition> "Defender" .
+
+<#teamnetherlands> foaf:member <#stefan-de-vrij> .
+
+<#joel-veltman> a foaf:Person ;
+	foaf:name "Joel Veltman" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamnetherlands> ;
+	<#hasPosition> "Defender" .
+
+<#teamnetherlands> foaf:member <#joel-veltman> .
+
+<#jordy-clasie> a foaf:Person ;
+	foaf:name "Jordy Clasie" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamnetherlands> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamnetherlands> foaf:member <#jordy-clasie> .
+
+<#georginio-wijnaldum> a foaf:Person ;
+	foaf:name "Georginio Wijnaldum" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamnetherlands> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamnetherlands> foaf:member <#georginio-wijnaldum> .
+
+<#leroy-fer> a foaf:Person ;
+	foaf:name "Leroy Fer" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamnetherlands> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamnetherlands> foaf:member <#leroy-fer> .
+
+<#daryl-janmaat> a foaf:Person ;
+	foaf:name "Daryl Janmaat" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamnetherlands> ;
+	<#hasPosition> "Defender" .
+
+<#teamnetherlands> foaf:member <#daryl-janmaat> .
+
+<#daley-blind> a foaf:Person ;
+	foaf:name "Daley Blind" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamnetherlands> ;
+	<#hasPosition> "Defender" .
+
+<#teamnetherlands> foaf:member <#daley-blind> .
+
+<#jasper-cillessen> a foaf:Person ;
+	foaf:name "Jasper Cillessen" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamnetherlands> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamnetherlands> foaf:member <#jasper-cillessen> .
+
+<#jeremain-lens> a foaf:Person ;
+	foaf:name "Jeremain Lens" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamnetherlands> ;
+	<#hasPosition> "Forward" .
+
+<#teamnetherlands> foaf:member <#jeremain-lens> .
+
+<#tim-krul> a foaf:Person ;
+	foaf:name "Tim Krul" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamnetherlands> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamnetherlands> foaf:member <#tim-krul> .
+
+<#jonathan-de-guzman> a foaf:Person ;
+	foaf:name "Jonathan De Guzman" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamnetherlands> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamnetherlands> foaf:member <#jonathan-de-guzman> .
+
+<#ron-vlaar> a foaf:Person ;
+	foaf:name "Ron Vlaar" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamnetherlands> ;
+	<#hasPosition> "Defender" .
+
+<#teamnetherlands> foaf:member <#ron-vlaar> .
+
+<#nigel-de-jong> a foaf:Person ;
+	foaf:name "Nigel De Jong" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamnetherlands> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamnetherlands> foaf:member <#nigel-de-jong> .
+
+<#klaas-jan-huntelaar> a foaf:Person ;
+	foaf:name "Klaas Jan Huntelaar" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamnetherlands> ;
+	<#hasPosition> "Forward" .
+
+<#teamnetherlands> foaf:member <#klaas-jan-huntelaar> .
+
+<#robin-van-persie> a foaf:Person ;
+	foaf:name "Robin Van Persie" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamnetherlands> ;
+	<#hasPosition> "Forward" .
+
+<#teamnetherlands> foaf:member <#robin-van-persie> .
+
+<#arjen-robben> a foaf:Person ;
+	foaf:name "Arjen Robben" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamnetherlands> ;
+	<#hasPosition> "Forward" .
+
+<#teamnetherlands> foaf:member <#arjen-robben> .
+
+<#wesley-sneijder> a foaf:Person ;
+	foaf:name "Wesley Sneijder" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamnetherlands> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamnetherlands> foaf:member <#wesley-sneijder> .
+
+<#michel-vorm> a foaf:Person ;
+	foaf:name "Michel Vorm" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamnetherlands> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamnetherlands> foaf:member <#michel-vorm> .
+
+<#paul-verhaegh> a foaf:Person ;
+	foaf:name "Paul Verhaegh" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamnetherlands> ;
+	<#hasPosition> "Defender" .
+
+<#teamnetherlands> foaf:member <#paul-verhaegh> .
+
+<#dirk-kuyt> a foaf:Person ;
+	foaf:name "Dirk Kuyt" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teamnetherlands> ;
+	<#hasPosition> "Forward" .
+
+<#teamnetherlands> foaf:member <#dirk-kuyt> .
+
+<#diego-reyes> a foaf:Person ;
+	foaf:name "Diego Reyes" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teammexico> ;
+	<#hasPosition> "Defender" .
+
+<#teammexico> a foaf:Group ;
+	foaf:name "Mexico National Soccer Team" ;
+	foaf:member <#diego-reyes> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Mexico_national_football_team> .
+
+<#A> a foaf:Group ;
+	foaf:member <#teammexico> ;
+	foaf:name "Group: A" .
+
+<#alan-pulido> a foaf:Person ;
+	foaf:name "Alan Pulido" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teammexico> ;
+	<#hasPosition> "Forward" .
+
+<#teammexico> foaf:member <#alan-pulido> .
+
+<#raul-jimenez> a foaf:Person ;
+	foaf:name "Raul Jimenez" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teammexico> ;
+	<#hasPosition> "Forward" .
+
+<#teammexico> foaf:member <#raul-jimenez> .
+
+<#isaac-brizuela> a foaf:Person ;
+	foaf:name "Isaac Brizuela" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teammexico> ;
+	<#hasPosition> "Midfielder" .
+
+<#teammexico> foaf:member <#isaac-brizuela> .
+
+<#marco-fabian> a foaf:Person ;
+	foaf:name "Marco Fabian" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teammexico> ;
+	<#hasPosition> "Midfielder" .
+
+<#teammexico> foaf:member <#marco-fabian> .
+
+<#carlos-pena> a foaf:Person ;
+	foaf:name "Carlos Pena" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teammexico> ;
+	<#hasPosition> "Midfielder" .
+
+<#teammexico> foaf:member <#carlos-pena> .
+
+<#hector-herrera> a foaf:Person ;
+	foaf:name "Hector Herrera" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teammexico> ;
+	<#hasPosition> "Midfielder" .
+
+<#teammexico> foaf:member <#hector-herrera> .
+
+<#javier-aquino> a foaf:Person ;
+	foaf:name "Javier Aquino" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teammexico> ;
+	<#hasPosition> "Midfielder" .
+
+<#teammexico> foaf:member <#javier-aquino> .
+
+<#giovani-dos-santos> a foaf:Person ;
+	foaf:name "Giovani Dos Santos" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teammexico> ;
+	<#hasPosition> "Forward" .
+
+<#teammexico> foaf:member <#giovani-dos-santos> .
+
+<#miguel-layun> a foaf:Person ;
+	foaf:name "Miguel Layun" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teammexico> ;
+	<#hasPosition> "Defender" .
+
+<#teammexico> foaf:member <#miguel-layun> .
+
+<#miguel-ponce> a foaf:Person ;
+	foaf:name "Miguel Ponce" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teammexico> ;
+	<#hasPosition> "Defender" .
+
+<#teammexico> foaf:member <#miguel-ponce> .
+
+<#javier-hernandez> a foaf:Person ;
+	foaf:name "Javier Hernandez" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teammexico> ;
+	<#hasPosition> "Forward" .
+
+<#teammexico> foaf:member <#javier-hernandez> .
+
+<#hector-moreno> a foaf:Person ;
+	foaf:name "Hector Moreno" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teammexico> ;
+	<#hasPosition> "Defender" .
+
+<#teammexico> foaf:member <#hector-moreno> .
+
+<#jose-vazquez> a foaf:Person ;
+	foaf:name "Jose Vazquez" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teammexico> ;
+	<#hasPosition> "Midfielder" .
+
+<#teammexico> foaf:member <#jose-vazquez> .
+
+<#andres-guardado> a foaf:Person ;
+	foaf:name "Andres Guardado" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teammexico> ;
+	<#hasPosition> "Defender" .
+
+<#teammexico> foaf:member <#andres-guardado> .
+
+<#paul-aguilar> a foaf:Person ;
+	foaf:name "Paul Aguilar" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teammexico> ;
+	<#hasPosition> "Defender" .
+
+<#teammexico> foaf:member <#paul-aguilar> .
+
+<#guillermo-ochoa> a foaf:Person ;
+	foaf:name "Guillermo Ochoa" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teammexico> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teammexico> foaf:member <#guillermo-ochoa> .
+
+<#oribe-peralta> a foaf:Person ;
+	foaf:name "Oribe Peralta" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teammexico> ;
+	<#hasPosition> "Forward" .
+
+<#teammexico> foaf:member <#oribe-peralta> .
+
+<#alfredo-talavera> a foaf:Person ;
+	foaf:name "Alfredo Talavera" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teammexico> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teammexico> foaf:member <#alfredo-talavera> .
+
+<#francisco-rodriguez> a foaf:Person ;
+	foaf:name "Francisco Rodriguez" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teammexico> ;
+	<#hasPosition> "Defender" .
+
+<#teammexico> foaf:member <#francisco-rodriguez> .
+
+<#jose-corona> a foaf:Person ;
+	foaf:name "Jose Corona" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teammexico> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teammexico> foaf:member <#jose-corona> .
+
+<#carlos-salcido> a foaf:Person ;
+	foaf:name "Carlos Salcido" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "34"^^xsd:int ;
+	<#isMemberOf> <#teammexico> ;
+	<#hasPosition> "Defender" .
+
+<#teammexico> foaf:member <#carlos-salcido> .
+
+<#rafael-marquez> a foaf:Person ;
+	foaf:name "Rafael Marquez" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "35"^^xsd:int ;
+	<#isMemberOf> <#teammexico> ;
+	<#hasPosition> "Defender" .
+
+<#teammexico> foaf:member <#rafael-marquez> .
+
+<#gotoku-sakai> a foaf:Person ;
+	foaf:name "Gotoku Sakai" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamjapan> ;
+	<#hasPosition> "Defender" .
+
+<#teamjapan> a foaf:Group ;
+	foaf:name "Japan National Soccer Team" ;
+	foaf:member <#gotoku-sakai> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Japan_national_football_team> .
+
+<#C> a foaf:Group ;
+	foaf:member <#teamjapan> ;
+	foaf:name "Group: C" .
+
+<#hotaru-yamaguchi> a foaf:Person ;
+	foaf:name "Hotaru Yamaguchi" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamjapan> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamjapan> foaf:member <#hotaru-yamaguchi> .
+
+<#yoichiro-kakitani> a foaf:Person ;
+	foaf:name "Yoichiro Kakitani" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamjapan> ;
+	<#hasPosition> "Forward" .
+
+<#teamjapan> foaf:member <#yoichiro-kakitani> .
+
+<#yuya-osako> a foaf:Person ;
+	foaf:name "Yuya Osako" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamjapan> ;
+	<#hasPosition> "Forward" .
+
+<#teamjapan> foaf:member <#yuya-osako> .
+
+<#manabu-saito> a foaf:Person ;
+	foaf:name "Manabu Saito" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamjapan> ;
+	<#hasPosition> "Forward" .
+
+<#teamjapan> foaf:member <#manabu-saito> .
+
+<#hiroshi-kiyotake> a foaf:Person ;
+	foaf:name "Hiroshi Kiyotake" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamjapan> ;
+	<#hasPosition> "Forward" .
+
+<#teamjapan> foaf:member <#hiroshi-kiyotake> .
+
+<#hiroki-sakai> a foaf:Person ;
+	foaf:name "Hiroki Sakai" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamjapan> ;
+	<#hasPosition> "Defender" .
+
+<#teamjapan> foaf:member <#hiroki-sakai> .
+
+<#shinji-kagawa> a foaf:Person ;
+	foaf:name "Shinji Kagawa" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamjapan> ;
+	<#hasPosition> "Forward" .
+
+<#teamjapan> foaf:member <#shinji-kagawa> .
+
+<#maya-yoshida> a foaf:Person ;
+	foaf:name "Maya Yoshida" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamjapan> ;
+	<#hasPosition> "Defender" .
+
+<#teamjapan> foaf:member <#maya-yoshida> .
+
+<#shuichi-gonda> a foaf:Person ;
+	foaf:name "Shuichi Gonda" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamjapan> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamjapan> foaf:member <#shuichi-gonda> .
+
+<#atsuto-uchida> a foaf:Person ;
+	foaf:name "Atsuto Uchida" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamjapan> ;
+	<#hasPosition> "Defender" .
+
+<#teamjapan> foaf:member <#atsuto-uchida> .
+
+<#masato-morishige> a foaf:Person ;
+	foaf:name "Masato Morishige" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamjapan> ;
+	<#hasPosition> "Defender" .
+
+<#teamjapan> foaf:member <#masato-morishige> .
+
+<#yuto-nagatomo> a foaf:Person ;
+	foaf:name "Yuto Nagatomo" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamjapan> ;
+	<#hasPosition> "Defender" .
+
+<#teamjapan> foaf:member <#yuto-nagatomo> .
+
+<#shinji-okazaki> a foaf:Person ;
+	foaf:name "Shinji Okazaki" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamjapan> ;
+	<#hasPosition> "Forward" .
+
+<#teamjapan> foaf:member <#shinji-okazaki> .
+
+<#keisuke-honda> a foaf:Person ;
+	foaf:name "Keisuke Honda" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamjapan> ;
+	<#hasPosition> "Forward" .
+
+<#teamjapan> foaf:member <#keisuke-honda> .
+
+<#masahiko-inoha> a foaf:Person ;
+	foaf:name "Masahiko Inoha" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamjapan> ;
+	<#hasPosition> "Defender" .
+
+<#teamjapan> foaf:member <#masahiko-inoha> .
+
+<#shusaku-nishikawa> a foaf:Person ;
+	foaf:name "Shusaku Nishikawa" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamjapan> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamjapan> foaf:member <#shusaku-nishikawa> .
+
+<#toshihiro-aoyama> a foaf:Person ;
+	foaf:name "Toshihiro Aoyama" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamjapan> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamjapan> foaf:member <#toshihiro-aoyama> .
+
+<#makoto-hasebe> a foaf:Person ;
+	foaf:name "Makoto Hasebe" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamjapan> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamjapan> foaf:member <#makoto-hasebe> .
+
+<#yasuyuki-konno> a foaf:Person ;
+	foaf:name "Yasuyuki Konno" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamjapan> ;
+	<#hasPosition> "Defender" .
+
+<#teamjapan> foaf:member <#yasuyuki-konno> .
+
+<#eiji-kawashima> a foaf:Person ;
+	foaf:name "Eiji Kawashima" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamjapan> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamjapan> foaf:member <#eiji-kawashima> .
+
+<#yoshito-okubo> a foaf:Person ;
+	foaf:name "Yoshito Okubo" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamjapan> ;
+	<#hasPosition> "Forward" .
+
+<#teamjapan> foaf:member <#yoshito-okubo> .
+
+<#yasuhito-endo> a foaf:Person ;
+	foaf:name "Yasuhito Endo" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "34"^^xsd:int ;
+	<#isMemberOf> <#teamjapan> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamjapan> foaf:member <#yasuhito-endo> .
+
+<#sayouba-mande> a foaf:Person ;
+	foaf:name "Sayouba Mande" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamcte-divoire> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamcte-divoire> a foaf:Group ;
+	foaf:name "Côte d'Ivoire National Soccer Team" ;
+	foaf:member <#sayouba-mande> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Côte_d'Ivoire_national_football_team> .
+
+<#C> foaf:member <#teamcte-divoire> .
+
+<#ismael-diomande> a foaf:Person ;
+	foaf:name "Ismael Diomande" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamcte-divoire> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcte-divoire> foaf:member <#ismael-diomande> .
+
+<#jean-daniel-akpa> a foaf:Person ;
+	foaf:name "Jean Daniel Akpa" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamcte-divoire> ;
+	<#hasPosition> "Defender" .
+
+<#teamcte-divoire> foaf:member <#jean-daniel-akpa> .
+
+<#serge-aurier> a foaf:Person ;
+	foaf:name "Serge Aurier" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamcte-divoire> ;
+	<#hasPosition> "Defender" .
+
+<#teamcte-divoire> foaf:member <#serge-aurier> .
+
+<#mathis-bolly> a foaf:Person ;
+	foaf:name "Mathis Bolly" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamcte-divoire> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcte-divoire> foaf:member <#mathis-bolly> .
+
+<#wilfried-bony> a foaf:Person ;
+	foaf:name "Wilfried Bony" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamcte-divoire> ;
+	<#hasPosition> "Forward" .
+
+<#teamcte-divoire> foaf:member <#wilfried-bony> .
+
+<#sylvain-gbohouo> a foaf:Person ;
+	foaf:name "Sylvain Gbohouo" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamcte-divoire> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamcte-divoire> foaf:member <#sylvain-gbohouo> .
+
+<#giovanni-sio> a foaf:Person ;
+	foaf:name "Giovanni Sio" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamcte-divoire> ;
+	<#hasPosition> "Forward" .
+
+<#teamcte-divoire> foaf:member <#giovanni-sio> .
+
+<#max-gradel> a foaf:Person ;
+	foaf:name "Max Gradel" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamcte-divoire> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcte-divoire> foaf:member <#max-gradel> .
+
+<#gervinho> a foaf:Person ;
+	foaf:name "Gervinho" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamcte-divoire> ;
+	<#hasPosition> "Forward" .
+
+<#teamcte-divoire> foaf:member <#gervinho> .
+
+<#ismael-tiote> a foaf:Person ;
+	foaf:name "Ismael Tiote" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamcte-divoire> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcte-divoire> foaf:member <#ismael-tiote> .
+
+<#ousmane-diarrassouba> a foaf:Person ;
+	foaf:name "Ousmane Diarrassouba" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamcte-divoire> ;
+	<#hasPosition> "Defender" .
+
+<#teamcte-divoire> foaf:member <#ousmane-diarrassouba> .
+
+<#constant-djakpa> a foaf:Person ;
+	foaf:name "Constant Djakpa" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamcte-divoire> ;
+	<#hasPosition> "Defender" .
+
+<#teamcte-divoire> foaf:member <#constant-djakpa> .
+
+<#salomon-kalou> a foaf:Person ;
+	foaf:name "Salomon Kalou" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamcte-divoire> ;
+	<#hasPosition> "Forward" .
+
+<#teamcte-divoire> foaf:member <#salomon-kalou> .
+
+<#souleymane-bamba> a foaf:Person ;
+	foaf:name "Souleymane Bamba" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamcte-divoire> ;
+	<#hasPosition> "Defender" .
+
+<#teamcte-divoire> foaf:member <#souleymane-bamba> .
+
+<#die-serey> a foaf:Person ;
+	foaf:name "Die Serey" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamcte-divoire> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcte-divoire> foaf:member <#die-serey> .
+
+<#konan-ya> a foaf:Person ;
+	foaf:name "Konan Ya" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamcte-divoire> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcte-divoire> foaf:member <#konan-ya> .
+
+<#yaya-toure> a foaf:Person ;
+	foaf:name "Yaya Toure" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamcte-divoire> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcte-divoire> foaf:member <#yaya-toure> .
+
+<#arthur-boka> a foaf:Person ;
+	foaf:name "Arthur Boka" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamcte-divoire> ;
+	<#hasPosition> "Defender" .
+
+<#teamcte-divoire> foaf:member <#arthur-boka> .
+
+<#kolo-toure> a foaf:Person ;
+	foaf:name "Kolo Toure" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teamcte-divoire> ;
+	<#hasPosition> "Defender" .
+
+<#teamcte-divoire> foaf:member <#kolo-toure> .
+
+<#didier-zokora> a foaf:Person ;
+	foaf:name "Didier Zokora" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teamcte-divoire> ;
+	<#hasPosition> "Defender" .
+
+<#teamcte-divoire> foaf:member <#didier-zokora> .
+
+<#boubacar-barry> a foaf:Person ;
+	foaf:name "Boubacar Barry" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "34"^^xsd:int ;
+	<#isMemberOf> <#teamcte-divoire> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamcte-divoire> foaf:member <#boubacar-barry> .
+
+<#didier-drogba> a foaf:Person ;
+	foaf:name "Didier Drogba" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "36"^^xsd:int ;
+	<#isMemberOf> <#teamcte-divoire> ;
+	<#hasPosition> "Forward" .
+
+<#teamcte-divoire> foaf:member <#didier-drogba> .
+
+<#marco-verratti> a foaf:Person ;
+	foaf:name "Marco Verratti" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamitaly> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamitaly> a foaf:Group ;
+	foaf:name "Italy National Soccer Team" ;
+	foaf:member <#marco-verratti> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Italy_national_football_team> .
+
+<#D> foaf:member <#teamitaly> .
+
+<#mattia-de-sciglio> a foaf:Person ;
+	foaf:name "Mattia De Sciglio" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamitaly> ;
+	<#hasPosition> "Defender" .
+
+<#teamitaly> foaf:member <#mattia-de-sciglio> .
+
+<#mattia-perin> a foaf:Person ;
+	foaf:name "Mattia Perin" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamitaly> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamitaly> foaf:member <#mattia-perin> .
+
+<#mario-balotelli> a foaf:Person ;
+	foaf:name "Mario Balotelli" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamitaly> ;
+	<#hasPosition> "Forward" .
+
+<#teamitaly> foaf:member <#mario-balotelli> .
+
+<#lorenzo-insigne> a foaf:Person ;
+	foaf:name "Lorenzo Insigne" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamitaly> ;
+	<#hasPosition> "Forward" .
+
+<#teamitaly> foaf:member <#lorenzo-insigne> .
+
+<#ciro-immobile> a foaf:Person ;
+	foaf:name "Ciro Immobile" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamitaly> ;
+	<#hasPosition> "Forward" .
+
+<#teamitaly> foaf:member <#ciro-immobile> .
+
+<#matteo-darmian> a foaf:Person ;
+	foaf:name "Matteo Darmian" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamitaly> ;
+	<#hasPosition> "Defender" .
+
+<#teamitaly> foaf:member <#matteo-darmian> .
+
+<#alessio-cerci> a foaf:Person ;
+	foaf:name "Alessio Cerci" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamitaly> ;
+	<#hasPosition> "Forward" .
+
+<#teamitaly> foaf:member <#alessio-cerci> .
+
+<#leonardo-bonucci> a foaf:Person ;
+	foaf:name "Leonardo Bonucci" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamitaly> ;
+	<#hasPosition> "Defender" .
+
+<#teamitaly> foaf:member <#leonardo-bonucci> .
+
+<#ignazio-abate> a foaf:Person ;
+	foaf:name "Ignazio Abate" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamitaly> ;
+	<#hasPosition> "Defender" .
+
+<#teamitaly> foaf:member <#ignazio-abate> .
+
+<#salvatore-sirigu> a foaf:Person ;
+	foaf:name "Salvatore Sirigu" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamitaly> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamitaly> foaf:member <#salvatore-sirigu> .
+
+<#antonio-candreva> a foaf:Person ;
+	foaf:name "Antonio Candreva" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamitaly> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamitaly> foaf:member <#antonio-candreva> .
+
+<#claudio-marchisio> a foaf:Person ;
+	foaf:name "Claudio Marchisio" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamitaly> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamitaly> foaf:member <#claudio-marchisio> .
+
+<#gabriel-paletta> a foaf:Person ;
+	foaf:name "Gabriel Paletta" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamitaly> ;
+	<#hasPosition> "Defender" .
+
+<#teamitaly> foaf:member <#gabriel-paletta> .
+
+<#alberto-aquilani> a foaf:Person ;
+	foaf:name "Alberto Aquilani" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamitaly> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamitaly> foaf:member <#alberto-aquilani> .
+
+<#giorgio-chiellini> a foaf:Person ;
+	foaf:name "Giorgio Chiellini" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamitaly> ;
+	<#hasPosition> "Defender" .
+
+<#teamitaly> foaf:member <#giorgio-chiellini> .
+
+<#marco-parolo> a foaf:Person ;
+	foaf:name "Marco Parolo" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamitaly> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamitaly> foaf:member <#marco-parolo> .
+
+<#daniele-de-rossi> a foaf:Person ;
+	foaf:name "Daniele De Rossi" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamitaly> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamitaly> foaf:member <#daniele-de-rossi> .
+
+<#antonio-cassano> a foaf:Person ;
+	foaf:name "Antonio Cassano" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamitaly> ;
+	<#hasPosition> "Forward" .
+
+<#teamitaly> foaf:member <#antonio-cassano> .
+
+<#thiago-motta> a foaf:Person ;
+	foaf:name "Thiago Motta" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamitaly> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamitaly> foaf:member <#thiago-motta> .
+
+<#andrea-barzagli> a foaf:Person ;
+	foaf:name "Andrea Barzagli" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teamitaly> ;
+	<#hasPosition> "Defender" .
+
+<#teamitaly> foaf:member <#andrea-barzagli> .
+
+<#andrea-pirlo> a foaf:Person ;
+	foaf:name "Andrea Pirlo" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "35"^^xsd:int ;
+	<#isMemberOf> <#teamitaly> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamitaly> foaf:member <#andrea-pirlo> .
+
+<#gianluigi-buffon> a foaf:Person ;
+	foaf:name "Gianluigi Buffon" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "36"^^xsd:int ;
+	<#isMemberOf> <#teamitaly> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamitaly> foaf:member <#gianluigi-buffon> .
+
+<#alireza-jahan-bakhsh> a foaf:Person ;
+	foaf:name "Alireza Jahan Bakhsh" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "20"^^xsd:int ;
+	<#isMemberOf> <#teamiran> ;
+	<#hasPosition> "Forward" .
+
+<#teamiran> a foaf:Group ;
+	foaf:name "Iran National Soccer Team" ;
+	foaf:member <#alireza-jahan-bakhsh> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Iran_national_football_team> .
+
+<#F> foaf:member <#teamiran> .
+
+<#bakhtiar-rahmani> a foaf:Person ;
+	foaf:name "Bakhtiar Rahmani" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamiran> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamiran> foaf:member <#bakhtiar-rahmani> .
+
+<#karim-ansari-fard> a foaf:Person ;
+	foaf:name "Karim Ansari Fard" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamiran> ;
+	<#hasPosition> "Forward" .
+
+<#teamiran> foaf:member <#karim-ansari-fard> .
+
+<#ehsan-haji-safi> a foaf:Person ;
+	foaf:name "Ehsan Haji Safi" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamiran> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamiran> foaf:member <#ehsan-haji-safi> .
+
+<#reza-haghighi> a foaf:Person ;
+	foaf:name "Reza Haghighi" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamiran> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamiran> foaf:member <#reza-haghighi> .
+
+<#reza-ghoochannejad> a foaf:Person ;
+	foaf:name "Reza Ghoochannejad" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamiran> ;
+	<#hasPosition> "Forward" .
+
+<#teamiran> foaf:member <#reza-ghoochannejad> .
+
+<#alireza-haghighi> a foaf:Person ;
+	foaf:name "Alireza Haghighi" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamiran> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamiran> foaf:member <#alireza-haghighi> .
+
+<#daniel-davari> a foaf:Person ;
+	foaf:name "Daniel Davari" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamiran> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamiran> foaf:member <#daniel-davari> .
+
+<#ashkan-dejagah> a foaf:Person ;
+	foaf:name "Ashkan Dejagah" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamiran> ;
+	<#hasPosition> "Forward" .
+
+<#teamiran> foaf:member <#ashkan-dejagah> .
+
+<#hossein-mahini> a foaf:Person ;
+	foaf:name "Hossein Mahini" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamiran> ;
+	<#hasPosition> "Defender" .
+
+<#teamiran> foaf:member <#hossein-mahini> .
+
+<#mehrdad-pooladi> a foaf:Person ;
+	foaf:name "Mehrdad Pooladi" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamiran> ;
+	<#hasPosition> "Defender" .
+
+<#teamiran> foaf:member <#mehrdad-pooladi> .
+
+<#steven-beitashour> a foaf:Person ;
+	foaf:name "Steven Beitashour" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamiran> ;
+	<#hasPosition> "Defender" .
+
+<#teamiran> foaf:member <#steven-beitashour> .
+
+<#masoud-shojaei> a foaf:Person ;
+	foaf:name "Masoud Shojaei" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamiran> ;
+	<#hasPosition> "Forward" .
+
+<#teamiran> foaf:member <#masoud-shojaei> .
+
+<#hashem-beikzadeh> a foaf:Person ;
+	foaf:name "Hashem Beikzadeh" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamiran> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamiran> foaf:member <#hashem-beikzadeh> .
+
+<#pejman-montazeri> a foaf:Person ;
+	foaf:name "Pejman Montazeri" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamiran> ;
+	<#hasPosition> "Defender" .
+
+<#teamiran> foaf:member <#pejman-montazeri> .
+
+<#ghasem-hadadifar> a foaf:Person ;
+	foaf:name "Ghasem Hadadifar" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamiran> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamiran> foaf:member <#ghasem-hadadifar> .
+
+<#khosro-heydari> a foaf:Person ;
+	foaf:name "Khosro Heydari" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamiran> ;
+	<#hasPosition> "Forward" .
+
+<#teamiran> foaf:member <#khosro-heydari> .
+
+<#ahmad-alnameh> a foaf:Person ;
+	foaf:name "Ahmad Alnameh" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamiran> ;
+	<#hasPosition> "Defender" .
+
+<#teamiran> foaf:member <#ahmad-alnameh> .
+
+<#andranik-timotian> a foaf:Person ;
+	foaf:name "Andranik Timotian" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamiran> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamiran> foaf:member <#andranik-timotian> .
+
+<#jalal-hosseini> a foaf:Person ;
+	foaf:name "Jalal Hosseini" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamiran> ;
+	<#hasPosition> "Defender" .
+
+<#teamiran> foaf:member <#jalal-hosseini> .
+
+<#amirhossein-sadeghi> a foaf:Person ;
+	foaf:name "Amirhossein Sadeghi" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamiran> ;
+	<#hasPosition> "Defender" .
+
+<#teamiran> foaf:member <#amirhossein-sadeghi> .
+
+<#javad-nekounam> a foaf:Person ;
+	foaf:name "Javad Nekounam" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teamiran> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamiran> foaf:member <#javad-nekounam> .
+
+<#rahman-ahmadi> a foaf:Person ;
+	foaf:name "Rahman Ahmadi" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teamiran> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamiran> foaf:member <#rahman-ahmadi> .
+
+<#luis-lopez> a foaf:Person ;
+	foaf:name "Luis Lopez" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "20"^^xsd:int ;
+	<#isMemberOf> <#teamhonduras> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamhonduras> a foaf:Group ;
+	foaf:name "Honduras National Soccer Team" ;
+	foaf:member <#luis-lopez> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Honduras_national_football_team> .
+
+<#E> foaf:member <#teamhonduras> .
+
+<#andy-najar> a foaf:Person ;
+	foaf:name "Andy Najar" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamhonduras> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamhonduras> foaf:member <#andy-najar> .
+
+<#luis-garrido> a foaf:Person ;
+	foaf:name "Luis Garrido" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamhonduras> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamhonduras> foaf:member <#luis-garrido> .
+
+<#mario-martinez> a foaf:Person ;
+	foaf:name "Mario Martinez" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamhonduras> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamhonduras> foaf:member <#mario-martinez> .
+
+<#rony-martinez> a foaf:Person ;
+	foaf:name "Rony Martinez" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamhonduras> ;
+	<#hasPosition> "Forward" .
+
+<#teamhonduras> foaf:member <#rony-martinez> .
+
+<#juan-carlos-garcia> a foaf:Person ;
+	foaf:name "Juan Carlos Garcia" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamhonduras> ;
+	<#hasPosition> "Defender" .
+
+<#teamhonduras> foaf:member <#juan-carlos-garcia> .
+
+<#jerry-bengtson> a foaf:Person ;
+	foaf:name "Jerry Bengtson" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamhonduras> ;
+	<#hasPosition> "Forward" .
+
+<#teamhonduras> foaf:member <#jerry-bengtson> .
+
+<#roger-espinoza> a foaf:Person ;
+	foaf:name "Roger Espinoza" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamhonduras> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamhonduras> foaf:member <#roger-espinoza> .
+
+<#edder-delgado> a foaf:Person ;
+	foaf:name "Edder Delgado" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamhonduras> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamhonduras> foaf:member <#edder-delgado> .
+
+<#juan-montes> a foaf:Person ;
+	foaf:name "Juan Montes" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamhonduras> ;
+	<#hasPosition> "Defender" .
+
+<#teamhonduras> foaf:member <#juan-montes> .
+
+<#jorge-claros> a foaf:Person ;
+	foaf:name "Jorge Claros" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamhonduras> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamhonduras> foaf:member <#jorge-claros> .
+
+<#brayan-beckeles> a foaf:Person ;
+	foaf:name "Brayan Beckeles" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamhonduras> ;
+	<#hasPosition> "Defender" .
+
+<#teamhonduras> foaf:member <#brayan-beckeles> .
+
+<#emilio-izaguirre> a foaf:Person ;
+	foaf:name "Emilio Izaguirre" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamhonduras> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamhonduras> foaf:member <#emilio-izaguirre> .
+
+<#wilson-palacios> a foaf:Person ;
+	foaf:name "Wilson Palacios" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamhonduras> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamhonduras> foaf:member <#wilson-palacios> .
+
+<#boniek-garcia> a foaf:Person ;
+	foaf:name "Boniek Garcia" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamhonduras> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamhonduras> foaf:member <#boniek-garcia> .
+
+<#osman-chavez> a foaf:Person ;
+	foaf:name "Osman Chavez" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamhonduras> ;
+	<#hasPosition> "Defender" .
+
+<#teamhonduras> foaf:member <#osman-chavez> .
+
+<#marvin-chavez> a foaf:Person ;
+	foaf:name "Marvin Chavez" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamhonduras> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamhonduras> foaf:member <#marvin-chavez> .
+
+<#carlo-costly> a foaf:Person ;
+	foaf:name "Carlo Costly" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamhonduras> ;
+	<#hasPosition> "Forward" .
+
+<#teamhonduras> foaf:member <#carlo-costly> .
+
+<#maynor-figueroa> a foaf:Person ;
+	foaf:name "Maynor Figueroa" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamhonduras> ;
+	<#hasPosition> "Defender" .
+
+<#teamhonduras> foaf:member <#maynor-figueroa> .
+
+<#jerry-palacios> a foaf:Person ;
+	foaf:name "Jerry Palacios" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamhonduras> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamhonduras> foaf:member <#jerry-palacios> .
+
+<#victor-bernardez> a foaf:Person ;
+	foaf:name "Victor Bernardez" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamhonduras> ;
+	<#hasPosition> "Defender" .
+
+<#teamhonduras> foaf:member <#victor-bernardez> .
+
+<#donis-escober> a foaf:Person ;
+	foaf:name "Donis Escober" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teamhonduras> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamhonduras> foaf:member <#donis-escober> .
+
+<#noel-valladares> a foaf:Person ;
+	foaf:name "Noel Valladares" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "37"^^xsd:int ;
+	<#isMemberOf> <#teamhonduras> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamhonduras> foaf:member <#noel-valladares> .
+
+<#stefanos-kapino> a foaf:Person ;
+	foaf:name "Stefanos Kapino" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "20"^^xsd:int ;
+	<#isMemberOf> <#teamgreece> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamgreece> a foaf:Group ;
+	foaf:name "Greece National Soccer Team" ;
+	foaf:member <#stefanos-kapino> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Greece_national_football_team> .
+
+<#C> foaf:member <#teamgreece> .
+
+<#ioannis-fetfatzidis> a foaf:Person ;
+	foaf:name "Ioannis Fetfatzidis" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamgreece> ;
+	<#hasPosition> "Forward" .
+
+<#teamgreece> foaf:member <#ioannis-fetfatzidis> .
+
+<#panagiotis-tachtsidis> a foaf:Person ;
+	foaf:name "Panagiotis Tachtsidis" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamgreece> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamgreece> foaf:member <#panagiotis-tachtsidis> .
+
+<#konstantinos-manolas> a foaf:Person ;
+	foaf:name "Konstantinos Manolas" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamgreece> ;
+	<#hasPosition> "Defender" .
+
+<#teamgreece> foaf:member <#konstantinos-manolas> .
+
+<#andreas-samaris> a foaf:Person ;
+	foaf:name "Andreas Samaris" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamgreece> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamgreece> foaf:member <#andreas-samaris> .
+
+<#konstantinos-mitroglou> a foaf:Person ;
+	foaf:name "Konstantinos Mitroglou" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamgreece> ;
+	<#hasPosition> "Forward" .
+
+<#teamgreece> foaf:member <#konstantinos-mitroglou> .
+
+<#sokratis-papastathopoulos> a foaf:Person ;
+	foaf:name "Sokratis Papastathopoulos" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamgreece> ;
+	<#hasPosition> "Defender" .
+
+<#teamgreece> foaf:member <#sokratis-papastathopoulos> .
+
+<#panagiotis-kone> a foaf:Person ;
+	foaf:name "Panagiotis Kone" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamgreece> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamgreece> foaf:member <#panagiotis-kone> .
+
+<#georgios-tzavelas> a foaf:Person ;
+	foaf:name "Georgios Tzavelas" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamgreece> ;
+	<#hasPosition> "Defender" .
+
+<#teamgreece> foaf:member <#georgios-tzavelas> .
+
+<#lazaros-christodoulopoulos> a foaf:Person ;
+	foaf:name "Lazaros Christodoulopoulos" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamgreece> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamgreece> foaf:member <#lazaros-christodoulopoulos> .
+
+<#panagiotis-glykos> a foaf:Person ;
+	foaf:name "Panagiotis Glykos" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamgreece> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamgreece> foaf:member <#panagiotis-glykos> .
+
+<#ioannis-maniatis> a foaf:Person ;
+	foaf:name "Ioannis Maniatis" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamgreece> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamgreece> foaf:member <#ioannis-maniatis> .
+
+<#orestis-karnezis> a foaf:Person ;
+	foaf:name "Orestis Karnezis" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamgreece> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamgreece> foaf:member <#orestis-karnezis> .
+
+<#georgios-samaras> a foaf:Person ;
+	foaf:name "Georgios Samaras" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamgreece> ;
+	<#hasPosition> "Forward" .
+
+<#teamgreece> foaf:member <#georgios-samaras> .
+
+<#vasileios-torosidis> a foaf:Person ;
+	foaf:name "Vasileios Torosidis" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamgreece> ;
+	<#hasPosition> "Defender" .
+
+<#teamgreece> foaf:member <#vasileios-torosidis> .
+
+<#jose-cholevas> a foaf:Person ;
+	foaf:name "Jose Cholevas" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamgreece> ;
+	<#hasPosition> "Defender" .
+
+<#teamgreece> foaf:member <#jose-cholevas> .
+
+<#alexandros-tziolis> a foaf:Person ;
+	foaf:name "Alexandros Tziolis" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamgreece> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamgreece> foaf:member <#alexandros-tziolis> .
+
+<#dimitrios-salpingidis> a foaf:Person ;
+	foaf:name "Dimitrios Salpingidis" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamgreece> ;
+	<#hasPosition> "Forward" .
+
+<#teamgreece> foaf:member <#dimitrios-salpingidis> .
+
+<#vangelis-moras> a foaf:Person ;
+	foaf:name "Vangelis Moras" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamgreece> ;
+	<#hasPosition> "Defender" .
+
+<#teamgreece> foaf:member <#vangelis-moras> .
+
+<#loukas-vyntra> a foaf:Person ;
+	foaf:name "Loukas Vyntra" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teamgreece> ;
+	<#hasPosition> "Defender" .
+
+<#teamgreece> foaf:member <#loukas-vyntra> .
+
+<#theofanis-gekas> a foaf:Person ;
+	foaf:name "Theofanis Gekas" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "34"^^xsd:int ;
+	<#isMemberOf> <#teamgreece> ;
+	<#hasPosition> "Forward" .
+
+<#teamgreece> foaf:member <#theofanis-gekas> .
+
+<#konstantinos-katsouranis> a foaf:Person ;
+	foaf:name "Konstantinos Katsouranis" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "35"^^xsd:int ;
+	<#isMemberOf> <#teamgreece> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamgreece> foaf:member <#konstantinos-katsouranis> .
+
+<#georgios-karagounis> a foaf:Person ;
+	foaf:name "Georgios Karagounis" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "37"^^xsd:int ;
+	<#isMemberOf> <#teamgreece> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamgreece> foaf:member <#georgios-karagounis> .
+
+<#rashid-sumaila> a foaf:Person ;
+	foaf:name "Rashid Sumaila" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamghana> ;
+	<#hasPosition> "Defender" .
+
+<#teamghana> a foaf:Group ;
+	foaf:name "Ghana National Soccer Team" ;
+	foaf:member <#rashid-sumaila> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Ghana_national_football_team> .
+
+<#G> foaf:member <#teamghana> .
+
+<#majeed-waris> a foaf:Person ;
+	foaf:name "Majeed Waris" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamghana> ;
+	<#hasPosition> "Forward" .
+
+<#teamghana> foaf:member <#majeed-waris> .
+
+<#acquah-afriyie> a foaf:Person ;
+	foaf:name "Acquah Afriyie" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamghana> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamghana> foaf:member <#acquah-afriyie> .
+
+<#christian-atsu> a foaf:Person ;
+	foaf:name "Christian Atsu" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamghana> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamghana> foaf:member <#christian-atsu> .
+
+<#jordan-ayew> a foaf:Person ;
+	foaf:name "Jordan Ayew" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamghana> ;
+	<#hasPosition> "Forward" .
+
+<#teamghana> foaf:member <#jordan-ayew> .
+
+<#mubarak-wakaso> a foaf:Person ;
+	foaf:name "Mubarak Wakaso" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamghana> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamghana> foaf:member <#mubarak-wakaso> .
+
+<#emmanuel-agyemang-badu> a foaf:Person ;
+	foaf:name "Emmanuel Agyemang Badu" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamghana> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamghana> foaf:member <#emmanuel-agyemang-badu> .
+
+<#jonathan-mensah> a foaf:Person ;
+	foaf:name "Jonathan Mensah" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamghana> ;
+	<#hasPosition> "Defender" .
+
+<#teamghana> foaf:member <#jonathan-mensah> .
+
+<#daniel-opare> a foaf:Person ;
+	foaf:name "Daniel Opare" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamghana> ;
+	<#hasPosition> "Defender" .
+
+<#teamghana> foaf:member <#daniel-opare> .
+
+<#andre-ayew> a foaf:Person ;
+	foaf:name "Andre Ayew" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamghana> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamghana> foaf:member <#andre-ayew> .
+
+<#mohammed-rabiu> a foaf:Person ;
+	foaf:name "Mohammed Rabiu" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamghana> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamghana> foaf:member <#mohammed-rabiu> .
+
+<#stephen-adams> a foaf:Person ;
+	foaf:name "Stephen Adams" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamghana> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamghana> foaf:member <#stephen-adams> .
+
+<#kwadwo-asamoah> a foaf:Person ;
+	foaf:name "Kwadwo Asamoah" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamghana> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamghana> foaf:member <#kwadwo-asamoah> .
+
+<#samuel-inkoom> a foaf:Person ;
+	foaf:name "Samuel Inkoom" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamghana> ;
+	<#hasPosition> "Defender" .
+
+<#teamghana> foaf:member <#samuel-inkoom> .
+
+<#albert-adomah> a foaf:Person ;
+	foaf:name "Albert Adomah" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamghana> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamghana> foaf:member <#albert-adomah> .
+
+<#adam-kwarasey> a foaf:Person ;
+	foaf:name "Adam Kwarasey" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamghana> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamghana> foaf:member <#adam-kwarasey> .
+
+<#kevin-prince-boateng> a foaf:Person ;
+	foaf:name "Kevin Prince Boateng" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamghana> ;
+	<#hasPosition> "Forward" .
+
+<#teamghana> foaf:member <#kevin-prince-boateng> .
+
+<#john-boye> a foaf:Person ;
+	foaf:name "John Boye" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamghana> ;
+	<#hasPosition> "Defender" .
+
+<#teamghana> foaf:member <#john-boye> .
+
+<#harrison-afful> a foaf:Person ;
+	foaf:name "Harrison Afful" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamghana> ;
+	<#hasPosition> "Defender" .
+
+<#teamghana> foaf:member <#harrison-afful> .
+
+<#asamoah-gyan> a foaf:Person ;
+	foaf:name "Asamoah Gyan" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamghana> ;
+	<#hasPosition> "Forward" .
+
+<#teamghana> foaf:member <#asamoah-gyan> .
+
+<#sulley-muntari> a foaf:Person ;
+	foaf:name "Sulley Muntari" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamghana> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamghana> foaf:member <#sulley-muntari> .
+
+<#fatawu-dauda> a foaf:Person ;
+	foaf:name "Fatawu Dauda" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamghana> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamghana> foaf:member <#fatawu-dauda> .
+
+<#michael-essien> a foaf:Person ;
+	foaf:name "Michael Essien" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamghana> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamghana> foaf:member <#michael-essien> .
+
+<#julian-draxler> a foaf:Person ;
+	foaf:name "Julian Draxler" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "20"^^xsd:int ;
+	<#isMemberOf> <#teamgermany> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamgermany> a foaf:Group ;
+	foaf:name "Germany National Soccer Team" ;
+	foaf:member <#julian-draxler> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Germany_national_football_team> .
+
+<#G> foaf:member <#teamgermany> .
+
+<#matthias-ginter> a foaf:Person ;
+	foaf:name "Matthias Ginter" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "20"^^xsd:int ;
+	<#isMemberOf> <#teamgermany> ;
+	<#hasPosition> "Defender" .
+
+<#teamgermany> foaf:member <#matthias-ginter> .
+
+<#mario-goetze> a foaf:Person ;
+	foaf:name "Mario Goetze" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamgermany> ;
+	<#hasPosition> "Forward" .
+
+<#teamgermany> foaf:member <#mario-goetze> .
+
+<#erik-durm> a foaf:Person ;
+	foaf:name "Erik Durm" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamgermany> ;
+	<#hasPosition> "Defender" .
+
+<#teamgermany> foaf:member <#erik-durm> .
+
+<#andre-schuerrle> a foaf:Person ;
+	foaf:name "Andre Schuerrle" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamgermany> ;
+	<#hasPosition> "Forward" .
+
+<#teamgermany> foaf:member <#andre-schuerrle> .
+
+<#christoph-kramer> a foaf:Person ;
+	foaf:name "Christoph Kramer" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamgermany> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamgermany> foaf:member <#christoph-kramer> .
+
+<#thomas-mueller> a foaf:Person ;
+	foaf:name "Thomas Mueller" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamgermany> ;
+	<#hasPosition> "Forward" .
+
+<#teamgermany> foaf:member <#thomas-mueller> .
+
+<#toni-kroos> a foaf:Person ;
+	foaf:name "Toni Kroos" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamgermany> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamgermany> foaf:member <#toni-kroos> .
+
+<#marco-reus> a foaf:Person ;
+	foaf:name "Marco Reus" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamgermany> ;
+	<#hasPosition> "Forward" .
+
+<#teamgermany> foaf:member <#marco-reus> .
+
+<#mesut-oezil> a foaf:Person ;
+	foaf:name "Mesut Oezil" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamgermany> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamgermany> foaf:member <#mesut-oezil> .
+
+<#mats-hummels> a foaf:Person ;
+	foaf:name "Mats Hummels" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamgermany> ;
+	<#hasPosition> "Defender" .
+
+<#teamgermany> foaf:member <#mats-hummels> .
+
+<#jerome-boateng> a foaf:Person ;
+	foaf:name "Jerome Boateng" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamgermany> ;
+	<#hasPosition> "Defender" .
+
+<#teamgermany> foaf:member <#jerome-boateng> .
+
+<#ron-robert-zieler> a foaf:Person ;
+	foaf:name "Ron-robert Zieler" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamgermany> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamgermany> foaf:member <#ron-robert-zieler> .
+
+<#kevin-grosskreutz> a foaf:Person ;
+	foaf:name "Kevin Grosskreutz" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamgermany> ;
+	<#hasPosition> "Defender" .
+
+<#teamgermany> foaf:member <#kevin-grosskreutz> .
+
+<#benedikt-hoewedes> a foaf:Person ;
+	foaf:name "Benedikt Hoewedes" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamgermany> ;
+	<#hasPosition> "Defender" .
+
+<#teamgermany> foaf:member <#benedikt-hoewedes> .
+
+<#sami-khedira> a foaf:Person ;
+	foaf:name "Sami Khedira" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamgermany> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamgermany> foaf:member <#sami-khedira> .
+
+<#manuel-neuer> a foaf:Person ;
+	foaf:name "Manuel Neuer" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamgermany> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamgermany> foaf:member <#manuel-neuer> .
+
+<#lukas-podolski> a foaf:Person ;
+	foaf:name "Lukas Podolski" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamgermany> ;
+	<#hasPosition> "Forward" .
+
+<#teamgermany> foaf:member <#lukas-podolski> .
+
+<#bastian-schweinsteiger> a foaf:Person ;
+	foaf:name "Bastian Schweinsteiger" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamgermany> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamgermany> foaf:member <#bastian-schweinsteiger> .
+
+<#per-mertesacker> a foaf:Person ;
+	foaf:name "Per Mertesacker" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamgermany> ;
+	<#hasPosition> "Defender" .
+
+<#teamgermany> foaf:member <#per-mertesacker> .
+
+<#philipp-lahm> a foaf:Person ;
+	foaf:name "Philipp Lahm" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamgermany> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamgermany> foaf:member <#philipp-lahm> .
+
+<#roman-weidenfeller> a foaf:Person ;
+	foaf:name "Roman Weidenfeller" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teamgermany> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamgermany> foaf:member <#roman-weidenfeller> .
+
+<#miroslav-klose> a foaf:Person ;
+	foaf:name "Miroslav Klose" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "36"^^xsd:int ;
+	<#isMemberOf> <#teamgermany> ;
+	<#hasPosition> "Forward" .
+
+<#teamgermany> foaf:member <#miroslav-klose> .
+
+<#lucas-digne> a foaf:Person ;
+	foaf:name "Lucas Digne" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "20"^^xsd:int ;
+	<#isMemberOf> <#teamfrance> ;
+	<#hasPosition> "Defender" .
+
+<#teamfrance> a foaf:Group ;
+	foaf:name "France National Soccer Team" ;
+	foaf:member <#lucas-digne> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/France_national_football_team> .
+
+<#E> foaf:member <#teamfrance> .
+
+<#paul-pogba> a foaf:Person ;
+	foaf:name "Paul Pogba" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamfrance> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamfrance> foaf:member <#paul-pogba> .
+
+<#raphael-varane> a foaf:Person ;
+	foaf:name "Raphael Varane" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamfrance> ;
+	<#hasPosition> "Defender" .
+
+<#teamfrance> foaf:member <#raphael-varane> .
+
+<#antoine-griezmann> a foaf:Person ;
+	foaf:name "Antoine Griezmann" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamfrance> ;
+	<#hasPosition> "Forward" .
+
+<#teamfrance> foaf:member <#antoine-griezmann> .
+
+<#eliaquim-mangala> a foaf:Person ;
+	foaf:name "Eliaquim Mangala" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamfrance> ;
+	<#hasPosition> "Defender" .
+
+<#teamfrance> foaf:member <#eliaquim-mangala> .
+
+<#clement-grenier> a foaf:Person ;
+	foaf:name "Clement Grenier" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamfrance> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamfrance> foaf:member <#clement-grenier> .
+
+<#mamadou-sakho> a foaf:Person ;
+	foaf:name "Mamadou Sakho" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamfrance> ;
+	<#hasPosition> "Defender" .
+
+<#teamfrance> foaf:member <#mamadou-sakho> .
+
+<#moussa-sissoko> a foaf:Person ;
+	foaf:name "Moussa Sissoko" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamfrance> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamfrance> foaf:member <#moussa-sissoko> .
+
+<#karim-benzema> a foaf:Person ;
+	foaf:name "Karim Benzema" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamfrance> ;
+	<#hasPosition> "Forward" .
+
+<#teamfrance> foaf:member <#karim-benzema> .
+
+<#olivier-giroud> a foaf:Person ;
+	foaf:name "Olivier Giroud" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamfrance> ;
+	<#hasPosition> "Forward" .
+
+<#teamfrance> foaf:member <#olivier-giroud> .
+
+<#loic-remy> a foaf:Person ;
+	foaf:name "Loic Remy" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamfrance> ;
+	<#hasPosition> "Forward" .
+
+<#teamfrance> foaf:member <#loic-remy> .
+
+<#blaise-matuidi> a foaf:Person ;
+	foaf:name "Blaise Matuidi" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamfrance> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamfrance> foaf:member <#blaise-matuidi> .
+
+<#stephane-ruffier> a foaf:Person ;
+	foaf:name "Stephane Ruffier" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamfrance> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamfrance> foaf:member <#stephane-ruffier> .
+
+<#hugo-lloris> a foaf:Person ;
+	foaf:name "Hugo Lloris" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamfrance> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamfrance> foaf:member <#hugo-lloris> .
+
+<#mathieu-debuchy> a foaf:Person ;
+	foaf:name "Mathieu Debuchy" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamfrance> ;
+	<#hasPosition> "Defender" .
+
+<#teamfrance> foaf:member <#mathieu-debuchy> .
+
+<#yohan-cabaye> a foaf:Person ;
+	foaf:name "Yohan Cabaye" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamfrance> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamfrance> foaf:member <#yohan-cabaye> .
+
+<#laurent-koscielny> a foaf:Person ;
+	foaf:name "Laurent Koscielny" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamfrance> ;
+	<#hasPosition> "Defender" .
+
+<#teamfrance> foaf:member <#laurent-koscielny> .
+
+<#mathieu-valbuena> a foaf:Person ;
+	foaf:name "Mathieu Valbuena" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamfrance> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamfrance> foaf:member <#mathieu-valbuena> .
+
+<#rio-mavuba> a foaf:Person ;
+	foaf:name "Rio Mavuba" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamfrance> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamfrance> foaf:member <#rio-mavuba> .
+
+<#franck-ribery> a foaf:Person ;
+	foaf:name "Franck Ribery" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamfrance> ;
+	<#hasPosition> "Forward" .
+
+<#teamfrance> foaf:member <#franck-ribery> .
+
+<#bacary-sagna> a foaf:Person ;
+	foaf:name "Bacary Sagna" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamfrance> ;
+	<#hasPosition> "Defender" .
+
+<#teamfrance> foaf:member <#bacary-sagna> .
+
+<#patrice-evra> a foaf:Person ;
+	foaf:name "Patrice Evra" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teamfrance> ;
+	<#hasPosition> "Defender" .
+
+<#teamfrance> foaf:member <#patrice-evra> .
+
+<#mickael-landreau> a foaf:Person ;
+	foaf:name "Mickael Landreau" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "35"^^xsd:int ;
+	<#isMemberOf> <#teamfrance> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamfrance> foaf:member <#mickael-landreau> .
+
+<#luke-shaw> a foaf:Person ;
+	foaf:name "Luke Shaw" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "18"^^xsd:int ;
+	<#isMemberOf> <#teamengland> ;
+	<#hasPosition> "Defender" .
+
+<#teamengland> a foaf:Group ;
+	foaf:name "England National Soccer Team" ;
+	foaf:member <#luke-shaw> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/England_national_football_team> .
+
+<#D> foaf:member <#teamengland> .
+
+<#raheem-sterling> a foaf:Person ;
+	foaf:name "Raheem Sterling" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "19"^^xsd:int ;
+	<#isMemberOf> <#teamengland> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamengland> foaf:member <#raheem-sterling> .
+
+<#alex-oxlade-chamberlain> a foaf:Person ;
+	foaf:name "Alex Oxlade Chamberlain" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "20"^^xsd:int ;
+	<#isMemberOf> <#teamengland> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamengland> foaf:member <#alex-oxlade-chamberlain> .
+
+<#ross-barkley> a foaf:Person ;
+	foaf:name "Ross Barkley" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "20"^^xsd:int ;
+	<#isMemberOf> <#teamengland> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamengland> foaf:member <#ross-barkley> .
+
+<#phil-jones> a foaf:Person ;
+	foaf:name "Phil Jones" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamengland> ;
+	<#hasPosition> "Defender" .
+
+<#teamengland> foaf:member <#phil-jones> .
+
+<#jack-wilshere> a foaf:Person ;
+	foaf:name "Jack Wilshere" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamengland> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamengland> foaf:member <#jack-wilshere> .
+
+<#danny-welbeck> a foaf:Person ;
+	foaf:name "Danny Welbeck" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamengland> ;
+	<#hasPosition> "Forward" .
+
+<#teamengland> foaf:member <#danny-welbeck> .
+
+<#daniel-sturridge> a foaf:Person ;
+	foaf:name "Daniel Sturridge" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamengland> ;
+	<#hasPosition> "Forward" .
+
+<#teamengland> foaf:member <#daniel-sturridge> .
+
+<#chris-smalling> a foaf:Person ;
+	foaf:name "Chris Smalling" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamengland> ;
+	<#hasPosition> "Defender" .
+
+<#teamengland> foaf:member <#chris-smalling> .
+
+<#jordan-henderson> a foaf:Person ;
+	foaf:name "Jordan Henderson" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamengland> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamengland> foaf:member <#jordan-henderson> .
+
+<#fraser-forster> a foaf:Person ;
+	foaf:name "Fraser Forster" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamengland> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamengland> foaf:member <#fraser-forster> .
+
+<#adam-lallana> a foaf:Person ;
+	foaf:name "Adam Lallana" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamengland> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamengland> foaf:member <#adam-lallana> .
+
+<#joe-hart> a foaf:Person ;
+	foaf:name "Joe Hart" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamengland> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamengland> foaf:member <#joe-hart> .
+
+<#wayne-rooney> a foaf:Person ;
+	foaf:name "Wayne Rooney" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamengland> ;
+	<#hasPosition> "Forward" .
+
+<#teamengland> foaf:member <#wayne-rooney> .
+
+<#gary-cahill> a foaf:Person ;
+	foaf:name "Gary Cahill" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamengland> ;
+	<#hasPosition> "Defender" .
+
+<#teamengland> foaf:member <#gary-cahill> .
+
+<#james-milner> a foaf:Person ;
+	foaf:name "James Milner" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamengland> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamengland> foaf:member <#james-milner> .
+
+<#leighton-baines> a foaf:Person ;
+	foaf:name "Leighton Baines" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamengland> ;
+	<#hasPosition> "Defender" .
+
+<#teamengland> foaf:member <#leighton-baines> .
+
+<#glen-johnson> a foaf:Person ;
+	foaf:name "Glen Johnson" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamengland> ;
+	<#hasPosition> "Defender" .
+
+<#teamengland> foaf:member <#glen-johnson> .
+
+<#phil-jagielka> a foaf:Person ;
+	foaf:name "Phil Jagielka" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamengland> ;
+	<#hasPosition> "Defender" .
+
+<#teamengland> foaf:member <#phil-jagielka> .
+
+<#ben-foster> a foaf:Person ;
+	foaf:name "Ben Foster" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamengland> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamengland> foaf:member <#ben-foster> .
+
+<#rickie-lambert> a foaf:Person ;
+	foaf:name "Rickie Lambert" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamengland> ;
+	<#hasPosition> "Forward" .
+
+<#teamengland> foaf:member <#rickie-lambert> .
+
+<#steven-gerrard> a foaf:Person ;
+	foaf:name "Steven Gerrard" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "34"^^xsd:int ;
+	<#isMemberOf> <#teamengland> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamengland> foaf:member <#steven-gerrard> .
+
+<#frank-lampard> a foaf:Person ;
+	foaf:name "Frank Lampard" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "36"^^xsd:int ;
+	<#isMemberOf> <#teamengland> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamengland> foaf:member <#frank-lampard> .
+
+<#carlos-gruezo> a foaf:Person ;
+	foaf:name "Carlos Gruezo" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "19"^^xsd:int ;
+	<#isMemberOf> <#teamecuador> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamecuador> a foaf:Group ;
+	foaf:name "Ecuador National Soccer Team" ;
+	foaf:member <#carlos-gruezo> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Ecuador_national_football_team> .
+
+<#E> foaf:member <#teamecuador> .
+
+<#alex-ibarra> a foaf:Person ;
+	foaf:name "Alex Ibarra" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamecuador> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamecuador> foaf:member <#alex-ibarra> .
+
+<#enner-valencia> a foaf:Person ;
+	foaf:name "Enner Valencia" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamecuador> ;
+	<#hasPosition> "Forward" .
+
+<#teamecuador> foaf:member <#enner-valencia> .
+
+<#fidel-martinez> a foaf:Person ;
+	foaf:name "Fidel Martinez" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamecuador> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamecuador> foaf:member <#fidel-martinez> .
+
+<#jefferson-montero> a foaf:Person ;
+	foaf:name "Jefferson Montero" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamecuador> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamecuador> foaf:member <#jefferson-montero> .
+
+<#felipe-caicedo> a foaf:Person ;
+	foaf:name "Felipe Caicedo" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamecuador> ;
+	<#hasPosition> "Forward" .
+
+<#teamecuador> foaf:member <#felipe-caicedo> .
+
+<#joao-rojas> a foaf:Person ;
+	foaf:name "Joao Rojas" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamecuador> ;
+	<#hasPosition> "Forward" .
+
+<#teamecuador> foaf:member <#joao-rojas> .
+
+<#adrian-bone> a foaf:Person ;
+	foaf:name "Adrian Bone" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamecuador> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamecuador> foaf:member <#adrian-bone> .
+
+<#jaimen-ayovi> a foaf:Person ;
+	foaf:name "Jaimen Ayovi" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamecuador> ;
+	<#hasPosition> "Forward" .
+
+<#teamecuador> foaf:member <#jaimen-ayovi> .
+
+<#frickson-erazo> a foaf:Person ;
+	foaf:name "Frickson Erazo" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamecuador> ;
+	<#hasPosition> "Defender" .
+
+<#teamecuador> foaf:member <#frickson-erazo> .
+
+<#juan-paredes> a foaf:Person ;
+	foaf:name "Juan Paredes" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamecuador> ;
+	<#hasPosition> "Defender" .
+
+<#teamecuador> foaf:member <#juan-paredes> .
+
+<#michael-arroyo> a foaf:Person ;
+	foaf:name "Michael Arroyo" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamecuador> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamecuador> foaf:member <#michael-arroyo> .
+
+<#alexander-dominguez> a foaf:Person ;
+	foaf:name "Alexander Dominguez" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamecuador> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamecuador> foaf:member <#alexander-dominguez> .
+
+<#antonio-valencia> a foaf:Person ;
+	foaf:name "Antonio Valencia" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamecuador> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamecuador> foaf:member <#antonio-valencia> .
+
+<#maximo-banguera> a foaf:Person ;
+	foaf:name "Maximo Banguera" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamecuador> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamecuador> foaf:member <#maximo-banguera> .
+
+<#cristhian-noboa> a foaf:Person ;
+	foaf:name "Cristhian Noboa" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamecuador> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamecuador> foaf:member <#cristhian-noboa> .
+
+<#gabriel-achilier> a foaf:Person ;
+	foaf:name "Gabriel Achilier" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamecuador> ;
+	<#hasPosition> "Defender" .
+
+<#teamecuador> foaf:member <#gabriel-achilier> .
+
+<#luis-saritama> a foaf:Person ;
+	foaf:name "Luis Saritama" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamecuador> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamecuador> foaf:member <#luis-saritama> .
+
+<#oscar-bagui> a foaf:Person ;
+	foaf:name "Oscar Bagui" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamecuador> ;
+	<#hasPosition> "Defender" .
+
+<#teamecuador> foaf:member <#oscar-bagui> .
+
+<#segundo-castillo> a foaf:Person ;
+	foaf:name "Segundo Castillo" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamecuador> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamecuador> foaf:member <#segundo-castillo> .
+
+<#jorge-guagua> a foaf:Person ;
+	foaf:name "Jorge Guagua" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamecuador> ;
+	<#hasPosition> "Defender" .
+
+<#teamecuador> foaf:member <#jorge-guagua> .
+
+<#walter-ayovi> a foaf:Person ;
+	foaf:name "Walter Ayovi" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "34"^^xsd:int ;
+	<#isMemberOf> <#teamecuador> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamecuador> foaf:member <#walter-ayovi> .
+
+<#edison-mendez> a foaf:Person ;
+	foaf:name "Edison Mendez" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "35"^^xsd:int ;
+	<#isMemberOf> <#teamecuador> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamecuador> foaf:member <#edison-mendez> .
+
+<#ante-rebic> a foaf:Person ;
+	foaf:name "Ante Rebic" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "20"^^xsd:int ;
+	<#isMemberOf> <#teamcroatia> ;
+	<#hasPosition> "Forward" .
+
+<#teamcroatia> a foaf:Group ;
+	foaf:name "Croatia National Soccer Team" ;
+	foaf:member <#ante-rebic> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Croatia_national_football_team> .
+
+<#A> foaf:member <#teamcroatia> .
+
+<#mateo-kovacic> a foaf:Person ;
+	foaf:name "Mateo Kovacic" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "20"^^xsd:int ;
+	<#isMemberOf> <#teamcroatia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcroatia> foaf:member <#mateo-kovacic> .
+
+<#oliver-zelenika> a foaf:Person ;
+	foaf:name "Oliver Zelenika" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamcroatia> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamcroatia> foaf:member <#oliver-zelenika> .
+
+<#ivan-mocinic> a foaf:Person ;
+	foaf:name "Ivan Mocinic" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamcroatia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcroatia> foaf:member <#ivan-mocinic> .
+
+<#marcelo-brozovic> a foaf:Person ;
+	foaf:name "Marcelo Brozovic" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamcroatia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcroatia> foaf:member <#marcelo-brozovic> .
+
+<#sime-vrsaljko> a foaf:Person ;
+	foaf:name "Sime Vrsaljko" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamcroatia> ;
+	<#hasPosition> "Defender" .
+
+<#teamcroatia> foaf:member <#sime-vrsaljko> .
+
+<#dejan-lovren> a foaf:Person ;
+	foaf:name "Dejan Lovren" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamcroatia> ;
+	<#hasPosition> "Defender" .
+
+<#teamcroatia> foaf:member <#dejan-lovren> .
+
+<#ivan-perisic> a foaf:Person ;
+	foaf:name "Ivan Perisic" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamcroatia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcroatia> foaf:member <#ivan-perisic> .
+
+<#domagoj-vida> a foaf:Person ;
+	foaf:name "Domagoj Vida" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamcroatia> ;
+	<#hasPosition> "Defender" .
+
+<#teamcroatia> foaf:member <#domagoj-vida> .
+
+<#ivan-rakitic> a foaf:Person ;
+	foaf:name "Ivan Rakitic" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamcroatia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcroatia> foaf:member <#ivan-rakitic> .
+
+<#sammir> a foaf:Person ;
+	foaf:name "Sammir" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamcroatia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcroatia> foaf:member <#sammir> .
+
+<#mario-mandzukic> a foaf:Person ;
+	foaf:name "Mario Mandzukic" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamcroatia> ;
+	<#hasPosition> "Forward" .
+
+<#teamcroatia> foaf:member <#mario-mandzukic> .
+
+<#nikica-jelavic> a foaf:Person ;
+	foaf:name "Nikica Jelavic" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamcroatia> ;
+	<#hasPosition> "Forward" .
+
+<#teamcroatia> foaf:member <#nikica-jelavic> .
+
+<#luka-modric> a foaf:Person ;
+	foaf:name "Luka Modric" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamcroatia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcroatia> foaf:member <#luka-modric> .
+
+<#vedran-corluka> a foaf:Person ;
+	foaf:name "Vedran Corluka" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamcroatia> ;
+	<#hasPosition> "Defender" .
+
+<#teamcroatia> foaf:member <#vedran-corluka> .
+
+<#gordon-schildenfeld> a foaf:Person ;
+	foaf:name "Gordon Schildenfeld" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamcroatia> ;
+	<#hasPosition> "Defender" .
+
+<#teamcroatia> foaf:member <#gordon-schildenfeld> .
+
+<#danijel-subasic> a foaf:Person ;
+	foaf:name "Danijel Subasic" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamcroatia> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamcroatia> foaf:member <#danijel-subasic> .
+
+<#ognjen-vukojevic> a foaf:Person ;
+	foaf:name "Ognjen Vukojevic" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamcroatia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcroatia> foaf:member <#ognjen-vukojevic> .
+
+<#eduardo> <#hasNumber> "22"^^xsd:int ;
+	<#isMemberOf> <#teamcroatia> ;
+	<#hasPosition> "Forward" .
+
+<#teamcroatia> foaf:member <#eduardo> .
+
+<#darijo-srna> a foaf:Person ;
+	foaf:name "Darijo Srna" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamcroatia> ;
+	<#hasPosition> "Defender" .
+
+<#teamcroatia> foaf:member <#darijo-srna> .
+
+<#danijel-pranjic> a foaf:Person ;
+	foaf:name "Danijel Pranjic" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamcroatia> ;
+	<#hasPosition> "Defender" .
+
+<#teamcroatia> foaf:member <#danijel-pranjic> .
+
+<#ivica-olic> a foaf:Person ;
+	foaf:name "Ivica Olic" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "34"^^xsd:int ;
+	<#isMemberOf> <#teamcroatia> ;
+	<#hasPosition> "Forward" .
+
+<#teamcroatia> foaf:member <#ivica-olic> .
+
+<#stipe-pletikosa> a foaf:Person ;
+	foaf:name "Stipe Pletikosa" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "35"^^xsd:int ;
+	<#isMemberOf> <#teamcroatia> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamcroatia> foaf:member <#stipe-pletikosa> .
+
+<#joel-campbell> a foaf:Person ;
+	foaf:name "Joel Campbell" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamcosta-rica> ;
+	<#hasPosition> "Forward" .
+
+<#teamcosta-rica> a foaf:Group ;
+	foaf:name "Costa Rica National Soccer Team" ;
+	foaf:member <#joel-campbell> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Costa_Rica_national_football_team> .
+
+<#D> foaf:member <#teamcosta-rica> .
+
+<#yeltsin-tejeda> a foaf:Person ;
+	foaf:name "Yeltsin Tejeda" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamcosta-rica> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcosta-rica> foaf:member <#yeltsin-tejeda> .
+
+<#diego-calvo> a foaf:Person ;
+	foaf:name "Diego Calvo" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamcosta-rica> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcosta-rica> foaf:member <#diego-calvo> .
+
+<#waylon-francis> a foaf:Person ;
+	foaf:name "Waylon Francis" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamcosta-rica> ;
+	<#hasPosition> "Defender" .
+
+<#teamcosta-rica> foaf:member <#waylon-francis> .
+
+<#marcos-urena> a foaf:Person ;
+	foaf:name "Marcos Urena" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamcosta-rica> ;
+	<#hasPosition> "Forward" .
+
+<#teamcosta-rica> foaf:member <#marcos-urena> .
+
+<#cristian-gamboa> a foaf:Person ;
+	foaf:name "Cristian Gamboa" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamcosta-rica> ;
+	<#hasPosition> "Defender" .
+
+<#teamcosta-rica> foaf:member <#cristian-gamboa> .
+
+<#oscar-duarte> a foaf:Person ;
+	foaf:name "Oscar Duarte" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamcosta-rica> ;
+	<#hasPosition> "Defender" .
+
+<#teamcosta-rica> foaf:member <#oscar-duarte> .
+
+<#celso-borges> a foaf:Person ;
+	foaf:name "Celso Borges" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamcosta-rica> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcosta-rica> foaf:member <#celso-borges> .
+
+<#giancarlo-gonzalez> a foaf:Person ;
+	foaf:name "Giancarlo Gonzalez" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamcosta-rica> ;
+	<#hasPosition> "Defender" .
+
+<#teamcosta-rica> foaf:member <#giancarlo-gonzalez> .
+
+<#jose-cubero> a foaf:Person ;
+	foaf:name "Jose Cubero" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamcosta-rica> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcosta-rica> foaf:member <#jose-cubero> .
+
+<#keylor-navas> a foaf:Person ;
+	foaf:name "Keylor Navas" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamcosta-rica> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamcosta-rica> foaf:member <#keylor-navas> .
+
+<#bryan-ruiz> a foaf:Person ;
+	foaf:name "Bryan Ruiz" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamcosta-rica> ;
+	<#hasPosition> "Forward" .
+
+<#teamcosta-rica> foaf:member <#bryan-ruiz> .
+
+<#oscar-granados> a foaf:Person ;
+	foaf:name "Oscar Granados" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamcosta-rica> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcosta-rica> foaf:member <#oscar-granados> .
+
+<#daniel-cambronero> a foaf:Person ;
+	foaf:name "Daniel Cambronero" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamcosta-rica> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamcosta-rica> foaf:member <#daniel-cambronero> .
+
+<#heiner-mora> a foaf:Person ;
+	foaf:name "Heiner Mora" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamcosta-rica> ;
+	<#hasPosition> "Defender" .
+
+<#teamcosta-rica> foaf:member <#heiner-mora> .
+
+<#roy-miller> a foaf:Person ;
+	foaf:name "Roy Miller" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamcosta-rica> ;
+	<#hasPosition> "Defender" .
+
+<#teamcosta-rica> foaf:member <#roy-miller> .
+
+<#randall-brenes> a foaf:Person ;
+	foaf:name "Randall Brenes" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamcosta-rica> ;
+	<#hasPosition> "Forward" .
+
+<#teamcosta-rica> foaf:member <#randall-brenes> .
+
+<#michael-barrantes> a foaf:Person ;
+	foaf:name "Michael Barrantes" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamcosta-rica> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcosta-rica> foaf:member <#michael-barrantes> .
+
+<#johnny-acosta> a foaf:Person ;
+	foaf:name "Johnny Acosta" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamcosta-rica> ;
+	<#hasPosition> "Defender" .
+
+<#teamcosta-rica> foaf:member <#johnny-acosta> .
+
+<#christian-bolanos> a foaf:Person ;
+	foaf:name "Christian Bolanos" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamcosta-rica> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcosta-rica> foaf:member <#christian-bolanos> .
+
+<#junior-diaz> a foaf:Person ;
+	foaf:name "Junior Diaz" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamcosta-rica> ;
+	<#hasPosition> "Defender" .
+
+<#teamcosta-rica> foaf:member <#junior-diaz> .
+
+<#michael-umana> a foaf:Person ;
+	foaf:name "Michael Umana" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamcosta-rica> ;
+	<#hasPosition> "Defender" .
+
+<#teamcosta-rica> foaf:member <#michael-umana> .
+
+<#patrick-pemberton> a foaf:Person ;
+	foaf:name "Patrick Pemberton" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamcosta-rica> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamcosta-rica> foaf:member <#patrick-pemberton> .
+
+<#eder-balanta> a foaf:Person ;
+	foaf:name "Eder Balanta" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamcolombia> ;
+	<#hasPosition> "Defender" .
+
+<#teamcolombia> a foaf:Group ;
+	foaf:name "Colombia National Soccer Team" ;
+	foaf:member <#eder-balanta> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Colombia_national_football_team> .
+
+<#B> foaf:member <#teamcolombia> .
+
+<#juan-quintero> a foaf:Person ;
+	foaf:name "Juan Quintero" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamcolombia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcolombia> foaf:member <#juan-quintero> .
+
+<#james-rodriguez> a foaf:Person ;
+	foaf:name "James Rodriguez" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamcolombia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcolombia> foaf:member <#james-rodriguez> .
+
+<#santiago-arias> a foaf:Person ;
+	foaf:name "Santiago Arias" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamcolombia> ;
+	<#hasPosition> "Defender" .
+
+<#teamcolombia> foaf:member <#santiago-arias> .
+
+<#victor-ibarbo> a foaf:Person ;
+	foaf:name "Victor Ibarbo" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamcolombia> ;
+	<#hasPosition> "Forward" .
+
+<#teamcolombia> foaf:member <#victor-ibarbo> .
+
+<#david-ospina> a foaf:Person ;
+	foaf:name "David Ospina" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamcolombia> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamcolombia> foaf:member <#david-ospina> .
+
+<#alexander-mejia> a foaf:Person ;
+	foaf:name "Alexander Mejia" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamcolombia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcolombia> foaf:member <#alexander-mejia> .
+
+<#camilo-vargas> a foaf:Person ;
+	foaf:name "Camilo Vargas" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamcolombia> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamcolombia> foaf:member <#camilo-vargas> .
+
+<#juan-cuadrado> a foaf:Person ;
+	foaf:name "Juan Cuadrado" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamcolombia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcolombia> foaf:member <#juan-cuadrado> .
+
+<#carlos-bacca> a foaf:Person ;
+	foaf:name "Carlos Bacca" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamcolombia> ;
+	<#hasPosition> "Forward" .
+
+<#teamcolombia> foaf:member <#carlos-bacca> .
+
+<#jackson-martinez> a foaf:Person ;
+	foaf:name "Jackson Martinez" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamcolombia> ;
+	<#hasPosition> "Forward" .
+
+<#teamcolombia> foaf:member <#jackson-martinez> .
+
+<#fredy-guarin> a foaf:Person ;
+	foaf:name "Fredy Guarin" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamcolombia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcolombia> foaf:member <#fredy-guarin> .
+
+<#pablo-armero> a foaf:Person ;
+	foaf:name "Pablo Armero" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamcolombia> ;
+	<#hasPosition> "Defender" .
+
+<#teamcolombia> foaf:member <#pablo-armero> .
+
+<#cristian-zapata> a foaf:Person ;
+	foaf:name "Cristian Zapata" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamcolombia> ;
+	<#hasPosition> "Defender" .
+
+<#teamcolombia> foaf:member <#cristian-zapata> .
+
+<#adrian-ramos> a foaf:Person ;
+	foaf:name "Adrian Ramos" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamcolombia> ;
+	<#hasPosition> "Forward" .
+
+<#teamcolombia> foaf:member <#adrian-ramos> .
+
+<#juan-zuniga> a foaf:Person ;
+	foaf:name "Juan Zuniga" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamcolombia> ;
+	<#hasPosition> "Defender" .
+
+<#teamcolombia> foaf:member <#juan-zuniga> .
+
+<#carlos-sanchez> a foaf:Person ;
+	foaf:name "Carlos Sanchez" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamcolombia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcolombia> foaf:member <#carlos-sanchez> .
+
+<#teofilo-gutierrez> a foaf:Person ;
+	foaf:name "Teofilo Gutierrez" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamcolombia> ;
+	<#hasPosition> "Forward" .
+
+<#teamcolombia> foaf:member <#teofilo-gutierrez> .
+
+<#carlos-valdes> a foaf:Person ;
+	foaf:name "Carlos Valdes" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamcolombia> ;
+	<#hasPosition> "Defender" .
+
+<#teamcolombia> foaf:member <#carlos-valdes> .
+
+<#abel-aguilar> a foaf:Person ;
+	foaf:name "Abel Aguilar" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamcolombia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcolombia> foaf:member <#abel-aguilar> .
+
+<#aldo-ramirez> a foaf:Person ;
+	foaf:name "Aldo Ramirez" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teamcolombia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcolombia> foaf:member <#aldo-ramirez> .
+
+<#mario-yepes> a foaf:Person ;
+	foaf:name "Mario Yepes" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "38"^^xsd:int ;
+	<#isMemberOf> <#teamcolombia> ;
+	<#hasPosition> "Defender" .
+
+<#teamcolombia> foaf:member <#mario-yepes> .
+
+<#faryd-mondragon> a foaf:Person ;
+	foaf:name "Faryd Mondragon" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "43"^^xsd:int ;
+	<#isMemberOf> <#teamcolombia> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamcolombia> foaf:member <#faryd-mondragon> .
+
+<#miiko-albornoz> a foaf:Person ;
+	foaf:name "Miiko Albornoz" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamchile> ;
+	<#hasPosition> "Defender" .
+
+<#teamchile> a foaf:Group ;
+	foaf:name "Chile National Soccer Team" ;
+	foaf:member <#miiko-albornoz> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Chile_national_football_team> .
+
+<#B> foaf:member <#teamchile> .
+
+<#felipe-gutierrez> a foaf:Person ;
+	foaf:name "Felipe Gutierrez" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamchile> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamchile> foaf:member <#felipe-gutierrez> .
+
+<#eduardo-vargas> a foaf:Person ;
+	foaf:name "Eduardo Vargas" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamchile> ;
+	<#hasPosition> "Forward" .
+
+<#teamchile> foaf:member <#eduardo-vargas> .
+
+<#alexis-sanchez> a foaf:Person ;
+	foaf:name "Alexis Sanchez" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamchile> ;
+	<#hasPosition> "Forward" .
+
+<#teamchile> foaf:member <#alexis-sanchez> .
+
+<#eugenio-mena> a foaf:Person ;
+	foaf:name "Eugenio Mena" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamchile> ;
+	<#hasPosition> "Defender" .
+
+<#teamchile> foaf:member <#eugenio-mena> .
+
+<#charles-aranguiz> a foaf:Person ;
+	foaf:name "Charles Aranguiz" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamchile> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamchile> foaf:member <#charles-aranguiz> .
+
+<#gary-medel> a foaf:Person ;
+	foaf:name "Gary Medel" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamchile> ;
+	<#hasPosition> "Defender" .
+
+<#teamchile> foaf:member <#gary-medel> .
+
+<#mauricio-isla> a foaf:Person ;
+	foaf:name "Mauricio Isla" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamchile> ;
+	<#hasPosition> "Defender" .
+
+<#teamchile> foaf:member <#mauricio-isla> .
+
+<#cristopher-toselli> a foaf:Person ;
+	foaf:name "Cristopher Toselli" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamchile> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamchile> foaf:member <#cristopher-toselli> .
+
+<#arturo-vidal> a foaf:Person ;
+	foaf:name "Arturo Vidal" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamchile> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamchile> foaf:member <#arturo-vidal> .
+
+<#marcelo-diaz> a foaf:Person ;
+	foaf:name "Marcelo Diaz" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamchile> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamchile> foaf:member <#marcelo-diaz> .
+
+<#carlos-carmona> a foaf:Person ;
+	foaf:name "Carlos Carmona" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamchile> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamchile> foaf:member <#carlos-carmona> .
+
+<#fabian-orellana> a foaf:Person ;
+	foaf:name "Fabian Orellana" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamchile> ;
+	<#hasPosition> "Forward" .
+
+<#teamchile> foaf:member <#fabian-orellana> .
+
+<#gonzalo-jara> a foaf:Person ;
+	foaf:name "Gonzalo Jara" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamchile> ;
+	<#hasPosition> "Defender" .
+
+<#teamchile> foaf:member <#gonzalo-jara> .
+
+<#francisco-silva> a foaf:Person ;
+	foaf:name "Francisco Silva" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamchile> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamchile> foaf:member <#francisco-silva> .
+
+<#jose-fuenzalida> a foaf:Person ;
+	foaf:name "Jose Fuenzalida" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamchile> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamchile> foaf:member <#jose-fuenzalida> .
+
+<#mauricio-pinilla> a foaf:Person ;
+	foaf:name "Mauricio Pinilla" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamchile> ;
+	<#hasPosition> "Forward" .
+
+<#teamchile> foaf:member <#mauricio-pinilla> .
+
+<#jean-beausejour> a foaf:Person ;
+	foaf:name "Jean Beausejour" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamchile> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamchile> foaf:member <#jean-beausejour> .
+
+<#jorge-valdivia> a foaf:Person ;
+	foaf:name "Jorge Valdivia" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamchile> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamchile> foaf:member <#jorge-valdivia> .
+
+<#jose-rojas> a foaf:Person ;
+	foaf:name "Jose Rojas" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamchile> ;
+	<#hasPosition> "Defender" .
+
+<#teamchile> foaf:member <#jose-rojas> .
+
+<#claudio-bravo> a foaf:Person ;
+	foaf:name "Claudio Bravo" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamchile> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamchile> foaf:member <#claudio-bravo> .
+
+<#esteban-paredes> a foaf:Person ;
+	foaf:name "Esteban Paredes" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teamchile> ;
+	<#hasPosition> "Forward" .
+
+<#teamchile> foaf:member <#esteban-paredes> .
+
+<#johnny-herrera> a foaf:Person ;
+	foaf:name "Johnny Herrera" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teamchile> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamchile> foaf:member <#johnny-herrera> .
+
+<#fabrice-olinga> a foaf:Person ;
+	foaf:name "Fabrice Olinga" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "18"^^xsd:int ;
+	<#isMemberOf> <#teamcameroon> ;
+	<#hasPosition> "Forward" .
+
+<#teamcameroon> a foaf:Group ;
+	foaf:name "Cameroon National Soccer Team" ;
+	foaf:member <#fabrice-olinga> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Cameroon_national_football_team> .
+
+<#A> foaf:member <#teamcameroon> .
+
+<#cedric-djeugoue> a foaf:Person ;
+	foaf:name "Cedric Djeugoue" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamcameroon> ;
+	<#hasPosition> "Defender" .
+
+<#teamcameroon> foaf:member <#cedric-djeugoue> .
+
+<#edgar-salli> a foaf:Person ;
+	foaf:name "Edgar Salli" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamcameroon> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcameroon> foaf:member <#edgar-salli> .
+
+<#vincent-aboubakar> a foaf:Person ;
+	foaf:name "Vincent Aboubakar" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamcameroon> ;
+	<#hasPosition> "Forward" .
+
+<#teamcameroon> foaf:member <#vincent-aboubakar> .
+
+<#joel-matip> a foaf:Person ;
+	foaf:name "Joel Matip" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamcameroon> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcameroon> foaf:member <#joel-matip> .
+
+<#loic-feudjou> a foaf:Person ;
+	foaf:name "Loic Feudjou" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamcameroon> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamcameroon> foaf:member <#loic-feudjou> .
+
+<#nicolas-nkoulou> a foaf:Person ;
+	foaf:name "Nicolas Nkoulou" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamcameroon> ;
+	<#hasPosition> "Defender" .
+
+<#teamcameroon> foaf:member <#nicolas-nkoulou> .
+
+<#sammy-ndjock> a foaf:Person ;
+	foaf:name "Sammy Ndjock" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamcameroon> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamcameroon> foaf:member <#sammy-ndjock> .
+
+<#eric-choupo-moting> a foaf:Person ;
+	foaf:name "Eric Choupo Moting" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamcameroon> ;
+	<#hasPosition> "Forward" .
+
+<#teamcameroon> foaf:member <#eric-choupo-moting> .
+
+<#benjamin-moukandjo> a foaf:Person ;
+	foaf:name "Benjamin Moukandjo" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamcameroon> ;
+	<#hasPosition> "Forward" .
+
+<#teamcameroon> foaf:member <#benjamin-moukandjo> .
+
+<#alexandre-song> a foaf:Person ;
+	foaf:name "Alexandre Song" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamcameroon> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcameroon> foaf:member <#alexandre-song> .
+
+<#allan-nyom> a foaf:Person ;
+	foaf:name "Allan Nyom" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamcameroon> ;
+	<#hasPosition> "Defender" .
+
+<#teamcameroon> foaf:member <#allan-nyom> .
+
+<#stephane-mbia> a foaf:Person ;
+	foaf:name "Stephane Mbia" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamcameroon> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcameroon> foaf:member <#stephane-mbia> .
+
+<#enoh-eyong> a foaf:Person ;
+	foaf:name "Enoh Eyong" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamcameroon> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcameroon> foaf:member <#enoh-eyong> .
+
+<#landry-nguemo> a foaf:Person ;
+	foaf:name "Landry Nguemo" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamcameroon> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcameroon> foaf:member <#landry-nguemo> .
+
+<#aurelien-chedjou> a foaf:Person ;
+	foaf:name "Aurelien Chedjou" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamcameroon> ;
+	<#hasPosition> "Defender" .
+
+<#teamcameroon> foaf:member <#aurelien-chedjou> .
+
+<#dany-nounkeu> a foaf:Person ;
+	foaf:name "Dany Nounkeu" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamcameroon> ;
+	<#hasPosition> "Defender" .
+
+<#teamcameroon> foaf:member <#dany-nounkeu> .
+
+<#benoit-assou-ekotto> a foaf:Person ;
+	foaf:name "Benoit Assou Ekotto" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamcameroon> ;
+	<#hasPosition> "Defender" .
+
+<#teamcameroon> foaf:member <#benoit-assou-ekotto> .
+
+<#henri-bedimo> a foaf:Person ;
+	foaf:name "Henri Bedimo" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamcameroon> ;
+	<#hasPosition> "Defender" .
+
+<#teamcameroon> foaf:member <#henri-bedimo> .
+
+<#jean-makoun> a foaf:Person ;
+	foaf:name "Jean Makoun" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamcameroon> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamcameroon> foaf:member <#jean-makoun> .
+
+<#charles-itandje> a foaf:Person ;
+	foaf:name "Charles Itandje" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamcameroon> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamcameroon> foaf:member <#charles-itandje> .
+
+<#pierre-webo> a foaf:Person ;
+	foaf:name "Pierre Webo" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamcameroon> ;
+	<#hasPosition> "Forward" .
+
+<#teamcameroon> foaf:member <#pierre-webo> .
+
+<#samuel-etoo> a foaf:Person ;
+	foaf:name "Samuel Etoo" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teamcameroon> ;
+	<#hasPosition> "Forward" .
+
+<#teamcameroon> foaf:member <#samuel-etoo> .
+
+<#bernard> a foaf:Person ;
+	foaf:name "Bernard" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teambrazil> ;
+	<#hasPosition> "Forward" .
+
+<#teambrazil> a foaf:Group ;
+	foaf:name "Brazil National Soccer Team" ;
+	foaf:member <#bernard> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Brazil_national_football_team> .
+
+<#A> foaf:member <#teambrazil> .
+
+<#neymar> a foaf:Person ;
+	foaf:name "Neymar" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teambrazil> ;
+	<#hasPosition> "Forward" .
+
+<#teambrazil> foaf:member <#neymar> .
+
+<#oscar> a foaf:Person ;
+	foaf:name "Oscar" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teambrazil> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambrazil> foaf:member <#oscar> .
+
+<#willian> a foaf:Person ;
+	foaf:name "Willian" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teambrazil> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambrazil> foaf:member <#willian> .
+
+<#paulinho> a foaf:Person ;
+	foaf:name "Paulinho" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teambrazil> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambrazil> foaf:member <#paulinho> .
+
+<#marcelo> a foaf:Person ;
+	foaf:name "Marcelo" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teambrazil> ;
+	<#hasPosition> "Defender" .
+
+<#teambrazil> foaf:member <#marcelo> .
+
+<#luiz-gustavo> a foaf:Person ;
+	foaf:name "Luiz Gustavo" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teambrazil> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambrazil> foaf:member <#luiz-gustavo> .
+
+<#jo> a foaf:Person ;
+	foaf:name "Jo" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teambrazil> ;
+	<#hasPosition> "Forward" .
+
+<#teambrazil> foaf:member <#jo> .
+
+<#hulk> a foaf:Person ;
+	foaf:name "Hulk" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teambrazil> ;
+	<#hasPosition> "Forward" .
+
+<#teambrazil> foaf:member <#hulk> .
+
+<#ramires> a foaf:Person ;
+	foaf:name "Ramires" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teambrazil> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambrazil> foaf:member <#ramires> .
+
+<#david-luiz> a foaf:Person ;
+	foaf:name "David Luiz" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teambrazil> ;
+	<#hasPosition> "Defender" .
+
+<#teambrazil> foaf:member <#david-luiz> .
+
+<#henrique> a foaf:Person ;
+	foaf:name "Henrique" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teambrazil> ;
+	<#hasPosition> "Defender" .
+
+<#teambrazil> foaf:member <#henrique> .
+
+<#fernandinho> a foaf:Person ;
+	foaf:name "Fernandinho" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teambrazil> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambrazil> foaf:member <#fernandinho> .
+
+<#hernanes> a foaf:Person ;
+	foaf:name "Hernanes" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teambrazil> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambrazil> foaf:member <#hernanes> .
+
+<#thiago-silva> a foaf:Person ;
+	foaf:name "Thiago Silva" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teambrazil> ;
+	<#hasPosition> "Defender" .
+
+<#teambrazil> foaf:member <#thiago-silva> .
+
+<#fred> a foaf:Person ;
+	foaf:name "Fred" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teambrazil> ;
+	<#hasPosition> "Forward" .
+
+<#teambrazil> foaf:member <#fred> .
+
+<#dante> a foaf:Person ;
+	foaf:name "Dante" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teambrazil> ;
+	<#hasPosition> "Defender" .
+
+<#teambrazil> foaf:member <#dante> .
+
+<#dani-alves> a foaf:Person ;
+	foaf:name "Dani Alves" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teambrazil> ;
+	<#hasPosition> "Defender" .
+
+<#teambrazil> foaf:member <#dani-alves> .
+
+<#victor> a foaf:Person ;
+	foaf:name "Victor" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teambrazil> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teambrazil> foaf:member <#victor> .
+
+<#jefferson> a foaf:Person ;
+	foaf:name "Jefferson" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teambrazil> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teambrazil> foaf:member <#jefferson> .
+
+<#maicon> a foaf:Person ;
+	foaf:name "Maicon" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teambrazil> ;
+	<#hasPosition> "Defender" .
+
+<#teambrazil> foaf:member <#maicon> .
+
+<#maxwell> a foaf:Person ;
+	foaf:name "Maxwell" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teambrazil> ;
+	<#hasPosition> "Defender" .
+
+<#teambrazil> foaf:member <#maxwell> .
+
+<#julio-cesar> a foaf:Person ;
+	foaf:name "Julio Cesar" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "34"^^xsd:int ;
+	<#isMemberOf> <#teambrazil> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teambrazil> foaf:member <#julio-cesar> .
+
+<#sead-kolasinac> a foaf:Person ;
+	foaf:name "Sead Kolasinac" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "20"^^xsd:int ;
+	<#isMemberOf> <#teambosnia-herzegovina> ;
+	<#hasPosition> "Defender" .
+
+<#teambosnia-herzegovina> a foaf:Group ;
+	foaf:name "Bosnia-Herzegovina National Soccer Team" ;
+	foaf:member <#sead-kolasinac> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Bosnia-Herzegovina_national_football_team> .
+
+<#F> foaf:member <#teambosnia-herzegovina> .
+
+<#muhamed-besic> a foaf:Person ;
+	foaf:name "Muhamed Besic" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teambosnia-herzegovina> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambosnia-herzegovina> foaf:member <#muhamed-besic> .
+
+<#izet-hajrovic> a foaf:Person ;
+	foaf:name "Izet Hajrovic" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teambosnia-herzegovina> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambosnia-herzegovina> foaf:member <#izet-hajrovic> .
+
+<#tino-sven-susic> a foaf:Person ;
+	foaf:name "Tino Sven Susic" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teambosnia-herzegovina> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambosnia-herzegovina> foaf:member <#tino-sven-susic> .
+
+<#miralem-pjanic> a foaf:Person ;
+	foaf:name "Miralem Pjanic" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teambosnia-herzegovina> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambosnia-herzegovina> foaf:member <#miralem-pjanic> .
+
+<#ermin-bicakcic> a foaf:Person ;
+	foaf:name "Ermin Bicakcic" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teambosnia-herzegovina> ;
+	<#hasPosition> "Defender" .
+
+<#teambosnia-herzegovina> foaf:member <#ermin-bicakcic> .
+
+<#ognjen-vranjes> a foaf:Person ;
+	foaf:name "Ognjen Vranjes" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teambosnia-herzegovina> ;
+	<#hasPosition> "Defender" .
+
+<#teambosnia-herzegovina> foaf:member <#ognjen-vranjes> .
+
+<#anel-hadzic> a foaf:Person ;
+	foaf:name "Anel Hadzic" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teambosnia-herzegovina> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambosnia-herzegovina> foaf:member <#anel-hadzic> .
+
+<#edin-visca> a foaf:Person ;
+	foaf:name "Edin Visca" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teambosnia-herzegovina> ;
+	<#hasPosition> "Forward" .
+
+<#teambosnia-herzegovina> foaf:member <#edin-visca> .
+
+<#toni-sunjic> a foaf:Person ;
+	foaf:name "Toni Sunjic" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teambosnia-herzegovina> ;
+	<#hasPosition> "Defender" .
+
+<#teambosnia-herzegovina> foaf:member <#toni-sunjic> .
+
+<#asmir-begovic> a foaf:Person ;
+	foaf:name "Asmir Begovic" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teambosnia-herzegovina> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teambosnia-herzegovina> foaf:member <#asmir-begovic> .
+
+<#edin-dzeko> a foaf:Person ;
+	foaf:name "Edin Dzeko" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teambosnia-herzegovina> ;
+	<#hasPosition> "Forward" .
+
+<#teambosnia-herzegovina> foaf:member <#edin-dzeko> .
+
+<#senijad-ibricic> a foaf:Person ;
+	foaf:name "Senijad Ibricic" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teambosnia-herzegovina> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambosnia-herzegovina> foaf:member <#senijad-ibricic> .
+
+<#senad-lulic> a foaf:Person ;
+	foaf:name "Senad Lulic" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teambosnia-herzegovina> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambosnia-herzegovina> foaf:member <#senad-lulic> .
+
+<#avdija-vrsajevic> a foaf:Person ;
+	foaf:name "Avdija Vrsajevic" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teambosnia-herzegovina> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambosnia-herzegovina> foaf:member <#avdija-vrsajevic> .
+
+<#jasmin-fejzic> a foaf:Person ;
+	foaf:name "Jasmin Fejzic" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teambosnia-herzegovina> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teambosnia-herzegovina> foaf:member <#jasmin-fejzic> .
+
+<#vedad-ibisevic> a foaf:Person ;
+	foaf:name "Vedad Ibisevic" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teambosnia-herzegovina> ;
+	<#hasPosition> "Forward" .
+
+<#teambosnia-herzegovina> foaf:member <#vedad-ibisevic> .
+
+<#haris-medunjanin> a foaf:Person ;
+	foaf:name "Haris Medunjanin" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teambosnia-herzegovina> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambosnia-herzegovina> foaf:member <#haris-medunjanin> .
+
+<#sejad-salihovic> a foaf:Person ;
+	foaf:name "Sejad Salihovic" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teambosnia-herzegovina> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambosnia-herzegovina> foaf:member <#sejad-salihovic> .
+
+<#mensur-mujdza> a foaf:Person ;
+	foaf:name "Mensur Mujdza" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teambosnia-herzegovina> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambosnia-herzegovina> foaf:member <#mensur-mujdza> .
+
+<#zvjezdan-misimovic> a foaf:Person ;
+	foaf:name "Zvjezdan Misimovic" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teambosnia-herzegovina> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambosnia-herzegovina> foaf:member <#zvjezdan-misimovic> .
+
+<#emir-spahic> a foaf:Person ;
+	foaf:name "Emir Spahic" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teambosnia-herzegovina> ;
+	<#hasPosition> "Defender" .
+
+<#teambosnia-herzegovina> foaf:member <#emir-spahic> .
+
+<#asmir-avdukic> a foaf:Person ;
+	foaf:name "Asmir Avdukic" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teambosnia-herzegovina> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teambosnia-herzegovina> foaf:member <#asmir-avdukic> .
+
+<#divock-origi> a foaf:Person ;
+	foaf:name "Divock Origi" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "19"^^xsd:int ;
+	<#isMemberOf> <#teambelgium> ;
+	<#hasPosition> "Forward" .
+
+<#teambelgium> a foaf:Group ;
+	foaf:name "Belgium National Soccer Team" ;
+	foaf:member <#divock-origi> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Belgium_national_football_team> .
+
+<#H> foaf:member <#teambelgium> .
+
+<#adnan-januzaj> a foaf:Person ;
+	foaf:name "Adnan Januzaj" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "19"^^xsd:int ;
+	<#isMemberOf> <#teambelgium> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambelgium> foaf:member <#adnan-januzaj> .
+
+<#romelu-lukaku> a foaf:Person ;
+	foaf:name "Romelu Lukaku" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teambelgium> ;
+	<#hasPosition> "Forward" .
+
+<#teambelgium> foaf:member <#romelu-lukaku> .
+
+<#kevin-de-bruyne> a foaf:Person ;
+	foaf:name "Kevin De Bruyne" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teambelgium> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambelgium> foaf:member <#kevin-de-bruyne> .
+
+<#thibaut-courtois> a foaf:Person ;
+	foaf:name "Thibaut Courtois" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teambelgium> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teambelgium> foaf:member <#thibaut-courtois> .
+
+<#eden-hazard> a foaf:Person ;
+	foaf:name "Eden Hazard" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teambelgium> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambelgium> foaf:member <#eden-hazard> .
+
+<#nacer-chadli> a foaf:Person ;
+	foaf:name "Nacer Chadli" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teambelgium> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambelgium> foaf:member <#nacer-chadli> .
+
+<#axel-witsel> a foaf:Person ;
+	foaf:name "Axel Witsel" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teambelgium> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambelgium> foaf:member <#axel-witsel> .
+
+<#toby-alderweireld> a foaf:Person ;
+	foaf:name "Toby Alderweireld" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teambelgium> ;
+	<#hasPosition> "Defender" .
+
+<#teambelgium> foaf:member <#toby-alderweireld> .
+
+<#kevin-mirallas> a foaf:Person ;
+	foaf:name "Kevin Mirallas" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teambelgium> ;
+	<#hasPosition> "Forward" .
+
+<#teambelgium> foaf:member <#kevin-mirallas> .
+
+<#marouane-fellaini> a foaf:Person ;
+	foaf:name "Marouane Fellaini" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teambelgium> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambelgium> foaf:member <#marouane-fellaini> .
+
+<#moussa-dembele> a foaf:Person ;
+	foaf:name "Moussa Dembele" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teambelgium> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambelgium> foaf:member <#moussa-dembele> .
+
+<#steven-defour> a foaf:Person ;
+	foaf:name "Steven Defour" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teambelgium> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambelgium> foaf:member <#steven-defour> .
+
+<#anthony-vanden-borre> a foaf:Person ;
+	foaf:name "Anthony Vanden Borre" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teambelgium> ;
+	<#hasPosition> "Defender" .
+
+<#teambelgium> foaf:member <#anthony-vanden-borre> .
+
+<#simon-mignolet> a foaf:Person ;
+	foaf:name "Simon Mignolet" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teambelgium> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teambelgium> foaf:member <#simon-mignolet> .
+
+<#dries-mertens> a foaf:Person ;
+	foaf:name "Dries Mertens" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teambelgium> ;
+	<#hasPosition> "Midfielder" .
+
+<#teambelgium> foaf:member <#dries-mertens> .
+
+<#jan-vertonghen> a foaf:Person ;
+	foaf:name "Jan Vertonghen" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teambelgium> ;
+	<#hasPosition> "Defender" .
+
+<#teambelgium> foaf:member <#jan-vertonghen> .
+
+<#vincent-kompany> a foaf:Person ;
+	foaf:name "Vincent Kompany" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teambelgium> ;
+	<#hasPosition> "Defender" .
+
+<#teambelgium> foaf:member <#vincent-kompany> .
+
+<#thomas-vermaelen> a foaf:Person ;
+	foaf:name "Thomas Vermaelen" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teambelgium> ;
+	<#hasPosition> "Defender" .
+
+<#teambelgium> foaf:member <#thomas-vermaelen> .
+
+<#laurent-ciman> a foaf:Person ;
+	foaf:name "Laurent Ciman" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teambelgium> ;
+	<#hasPosition> "Defender" .
+
+<#teambelgium> foaf:member <#laurent-ciman> .
+
+<#sammy-bossut> a foaf:Person ;
+	foaf:name "Sammy Bossut" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teambelgium> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teambelgium> foaf:member <#sammy-bossut> .
+
+<#nicolas-lombaerts> a foaf:Person ;
+	foaf:name "Nicolas Lombaerts" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teambelgium> ;
+	<#hasPosition> "Defender" .
+
+<#teambelgium> foaf:member <#nicolas-lombaerts> .
+
+<#daniel-van-buyten> a foaf:Person ;
+	foaf:name "Daniel Van Buyten" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "36"^^xsd:int ;
+	<#isMemberOf> <#teambelgium> ;
+	<#hasPosition> "Defender" .
+
+<#teambelgium> foaf:member <#daniel-van-buyten> .
+
+<#adam-taggart> a foaf:Person ;
+	foaf:name "Adam Taggart" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamaustralia> ;
+	<#hasPosition> "Forward" .
+
+<#teamaustralia> a foaf:Group ;
+	foaf:name "Australia National Soccer Team" ;
+	foaf:member <#adam-taggart> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Australia_national_football_team> .
+
+<#B> foaf:member <#teamaustralia> .
+
+<#massimo-luongo> a foaf:Person ;
+	foaf:name "Massimo Luongo" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamaustralia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamaustralia> foaf:member <#massimo-luongo> .
+
+<#bailey-wright> a foaf:Person ;
+	foaf:name "Bailey Wright" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "21"^^xsd:int ;
+	<#isMemberOf> <#teamaustralia> ;
+	<#hasPosition> "Defender" .
+
+<#teamaustralia> foaf:member <#bailey-wright> .
+
+<#tommy-oar> a foaf:Person ;
+	foaf:name "Tommy Oar" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamaustralia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamaustralia> foaf:member <#tommy-oar> .
+
+<#maty-ryan> a foaf:Person ;
+	foaf:name "Maty Ryan" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamaustralia> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamaustralia> foaf:member <#maty-ryan> .
+
+<#ben-halloran> a foaf:Person ;
+	foaf:name "Ben Halloran" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamaustralia> ;
+	<#hasPosition> "Forward" .
+
+<#teamaustralia> foaf:member <#ben-halloran> .
+
+<#jason-davidson> a foaf:Person ;
+	foaf:name "Jason Davidson" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamaustralia> ;
+	<#hasPosition> "Defender" .
+
+<#teamaustralia> foaf:member <#jason-davidson> .
+
+<#mathew-leckie> a foaf:Person ;
+	foaf:name "Mathew Leckie" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamaustralia> ;
+	<#hasPosition> "Forward" .
+
+<#teamaustralia> foaf:member <#mathew-leckie> .
+
+<#ryan-mcgowan> a foaf:Person ;
+	foaf:name "Ryan Mcgowan" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamaustralia> ;
+	<#hasPosition> "Defender" .
+
+<#teamaustralia> foaf:member <#ryan-mcgowan> .
+
+<#james-troisi> a foaf:Person ;
+	foaf:name "James Troisi" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamaustralia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamaustralia> foaf:member <#james-troisi> .
+
+<#mitch-langerak> a foaf:Person ;
+	foaf:name "Mitch Langerak" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamaustralia> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamaustralia> foaf:member <#mitch-langerak> .
+
+<#matthew-spiranovic> a foaf:Person ;
+	foaf:name "Matthew Spiranovic" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamaustralia> ;
+	<#hasPosition> "Defender" .
+
+<#teamaustralia> foaf:member <#matthew-spiranovic> .
+
+<#james-holland> a foaf:Person ;
+	foaf:name "James Holland" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamaustralia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamaustralia> foaf:member <#james-holland> .
+
+<#oliver-bozanic> a foaf:Person ;
+	foaf:name "Oliver Bozanic" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamaustralia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamaustralia> foaf:member <#oliver-bozanic> .
+
+<#ivan-franjic> a foaf:Person ;
+	foaf:name "Ivan Franjic" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamaustralia> ;
+	<#hasPosition> "Defender" .
+
+<#teamaustralia> foaf:member <#ivan-franjic> .
+
+<#dario-vidosic> a foaf:Person ;
+	foaf:name "Dario Vidosic" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamaustralia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamaustralia> foaf:member <#dario-vidosic> .
+
+<#mark-milligan> a foaf:Person ;
+	foaf:name "Mark Milligan" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamaustralia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamaustralia> foaf:member <#mark-milligan> .
+
+<#mile-jedinak> a foaf:Person ;
+	foaf:name "Mile Jedinak" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamaustralia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamaustralia> foaf:member <#mile-jedinak> .
+
+<#alex-wilkinson> a foaf:Person ;
+	foaf:name "Alex Wilkinson" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamaustralia> ;
+	<#hasPosition> "Defender" .
+
+<#teamaustralia> foaf:member <#alex-wilkinson> .
+
+<#matt-mckay> a foaf:Person ;
+	foaf:name "Matt Mckay" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamaustralia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamaustralia> foaf:member <#matt-mckay> .
+
+<#eugene-galekovic> a foaf:Person ;
+	foaf:name "Eugene Galekovic" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teamaustralia> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamaustralia> foaf:member <#eugene-galekovic> .
+
+<#tim-cahill> a foaf:Person ;
+	foaf:name "Tim Cahill" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "34"^^xsd:int ;
+	<#isMemberOf> <#teamaustralia> ;
+	<#hasPosition> "Forward" .
+
+<#teamaustralia> foaf:member <#tim-cahill> .
+
+<#mark-bresciano> a foaf:Person ;
+	foaf:name "Mark Bresciano" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "34"^^xsd:int ;
+	<#isMemberOf> <#teamaustralia> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamaustralia> foaf:member <#mark-bresciano> .
+
+<#marcos-rojo> a foaf:Person ;
+	foaf:name "Marcos Rojo" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamargentina> ;
+	<#hasPosition> "Defender" .
+
+<#teamargentina> a foaf:Group ;
+	foaf:name "Argentina National Soccer Team" ;
+	foaf:member <#marcos-rojo> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Argentina_national_football_team> .
+
+<#F> foaf:member <#teamargentina> .
+
+<#federico-fernandez> a foaf:Person ;
+	foaf:name "Federico Fernandez" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamargentina> ;
+	<#hasPosition> "Defender" .
+
+<#teamargentina> foaf:member <#federico-fernandez> .
+
+<#gonzalo-higuain> a foaf:Person ;
+	foaf:name "Gonzalo Higuain" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamargentina> ;
+	<#hasPosition> "Forward" .
+
+<#teamargentina> foaf:member <#gonzalo-higuain> .
+
+<#lionel-messi> a foaf:Person ;
+	foaf:name "Lionel Messi" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamargentina> ;
+	<#hasPosition> "Forward" .
+
+<#teamargentina> foaf:member <#lionel-messi> .
+
+<#sergio-aguero> a foaf:Person ;
+	foaf:name "Sergio Aguero" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamargentina> ;
+	<#hasPosition> "Forward" .
+
+<#teamargentina> foaf:member <#sergio-aguero> .
+
+<#angel-di-maria> a foaf:Person ;
+	foaf:name "Angel Di Maria" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamargentina> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamargentina> foaf:member <#angel-di-maria> .
+
+<#ricardo-alvarez> a foaf:Person ;
+	foaf:name "Ricardo Alvarez" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamargentina> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamargentina> foaf:member <#ricardo-alvarez> .
+
+<#sergio-romero> a foaf:Person ;
+	foaf:name "Sergio Romero" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamargentina> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamargentina> foaf:member <#sergio-romero> .
+
+<#ezequiel-garay> a foaf:Person ;
+	foaf:name "Ezequiel Garay" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamargentina> ;
+	<#hasPosition> "Defender" .
+
+<#teamargentina> foaf:member <#ezequiel-garay> .
+
+<#enzo-perez> a foaf:Person ;
+	foaf:name "Enzo Perez" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamargentina> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamargentina> foaf:member <#enzo-perez> .
+
+<#augusto-fernandez> a foaf:Person ;
+	foaf:name "Augusto Fernandez" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamargentina> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamargentina> foaf:member <#augusto-fernandez> .
+
+<#fernando-gago> a foaf:Person ;
+	foaf:name "Fernando Gago" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamargentina> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamargentina> foaf:member <#fernando-gago> .
+
+<#lucas-biglia> a foaf:Person ;
+	foaf:name "Lucas Biglia" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamargentina> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamargentina> foaf:member <#lucas-biglia> .
+
+<#ezequiel-lavezzi> a foaf:Person ;
+	foaf:name "Ezequiel Lavezzi" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamargentina> ;
+	<#hasPosition> "Forward" .
+
+<#teamargentina> foaf:member <#ezequiel-lavezzi> .
+
+<#pablo-zabaleta> a foaf:Person ;
+	foaf:name "Pablo Zabaleta" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamargentina> ;
+	<#hasPosition> "Defender" .
+
+<#teamargentina> foaf:member <#pablo-zabaleta> .
+
+<#javier-mascherano> a foaf:Person ;
+	foaf:name "Javier Mascherano" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamargentina> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamargentina> foaf:member <#javier-mascherano> .
+
+<#mariano-andujar> a foaf:Person ;
+	foaf:name "Mariano Andujar" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamargentina> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamargentina> foaf:member <#mariano-andujar> .
+
+<#jose-maria-basanta> a foaf:Person ;
+	foaf:name "Jose Maria Basanta" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamargentina> ;
+	<#hasPosition> "Defender" .
+
+<#teamargentina> foaf:member <#jose-maria-basanta> .
+
+<#rodrigo-palacio> a foaf:Person ;
+	foaf:name "Rodrigo Palacio" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamargentina> ;
+	<#hasPosition> "Forward" .
+
+<#teamargentina> foaf:member <#rodrigo-palacio> .
+
+<#agustin-orion> a foaf:Person ;
+	foaf:name "Agustin Orion" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "32"^^xsd:int ;
+	<#isMemberOf> <#teamargentina> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamargentina> foaf:member <#agustin-orion> .
+
+<#maxi-rodriguez> a foaf:Person ;
+	foaf:name "Maxi Rodriguez" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teamargentina> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamargentina> foaf:member <#maxi-rodriguez> .
+
+<#martin-demichelis> a foaf:Person ;
+	foaf:name "Martin Demichelis" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teamargentina> ;
+	<#hasPosition> "Defender" .
+
+<#teamargentina> foaf:member <#martin-demichelis> .
+
+<#hugo-campagnaro> a foaf:Person ;
+	foaf:name "Hugo Campagnaro" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "33"^^xsd:int ;
+	<#isMemberOf> <#teamargentina> ;
+	<#hasPosition> "Defender" .
+
+<#teamargentina> foaf:member <#hugo-campagnaro> .
+
+<#nabil-bentaleb> a foaf:Person ;
+	foaf:name "Nabil Bentaleb" ;
+	<#hasNumber> "14"^^xsd:int ;
+	foaf:age "19"^^xsd:int ;
+	<#isMemberOf> <#teamalgeria> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamalgeria> a foaf:Group ;
+	foaf:name "Algeria National Soccer Team" ;
+	foaf:member <#nabil-bentaleb> ;
+	rdfs:seeAlso <http://dbpedia.org/resource/Algeria_national_football_team> .
+
+<#H> foaf:member <#teamalgeria> .
+
+<#saphir-taider> a foaf:Person ;
+	foaf:name "Saphir Taider" ;
+	<#hasNumber> "19"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamalgeria> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamalgeria> foaf:member <#saphir-taider> .
+
+<#aissa-mandi> a foaf:Person ;
+	foaf:name "Aissa Mandi" ;
+	<#hasNumber> "20"^^xsd:int ;
+	foaf:age "22"^^xsd:int ;
+	<#isMemberOf> <#teamalgeria> ;
+	<#hasPosition> "Defender" .
+
+<#teamalgeria> foaf:member <#aissa-mandi> .
+
+<#faouzi-ghoulam> a foaf:Person ;
+	foaf:name "Faouzi Ghoulam" ;
+	<#hasNumber> "3"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamalgeria> ;
+	<#hasPosition> "Defender" .
+
+<#teamalgeria> foaf:member <#faouzi-ghoulam> .
+
+<#riyad-mahrez> a foaf:Person ;
+	foaf:name "Riyad Mahrez" ;
+	<#hasNumber> "21"^^xsd:int ;
+	foaf:age "23"^^xsd:int ;
+	<#isMemberOf> <#teamalgeria> ;
+	<#hasPosition> "Forward" .
+
+<#teamalgeria> foaf:member <#riyad-mahrez> .
+
+<#nabil-ghilas> a foaf:Person ;
+	foaf:name "Nabil Ghilas" ;
+	<#hasNumber> "9"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamalgeria> ;
+	<#hasPosition> "Forward" .
+
+<#teamalgeria> foaf:member <#nabil-ghilas> .
+
+<#sofiane-feghouli> a foaf:Person ;
+	foaf:name "Sofiane Feghouli" ;
+	<#hasNumber> "10"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamalgeria> ;
+	<#hasPosition> "Forward" .
+
+<#teamalgeria> foaf:member <#sofiane-feghouli> .
+
+<#yacine-brahimi> a foaf:Person ;
+	foaf:name "Yacine Brahimi" ;
+	<#hasNumber> "11"^^xsd:int ;
+	foaf:age "24"^^xsd:int ;
+	<#isMemberOf> <#teamalgeria> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamalgeria> foaf:member <#yacine-brahimi> .
+
+<#esseid-belkalem> a foaf:Person ;
+	foaf:name "Esseid Belkalem" ;
+	<#hasNumber> "4"^^xsd:int ;
+	foaf:age "25"^^xsd:int ;
+	<#isMemberOf> <#teamalgeria> ;
+	<#hasPosition> "Defender" .
+
+<#teamalgeria> foaf:member <#esseid-belkalem> .
+
+<#islam-slimani> a foaf:Person ;
+	foaf:name "Islam Slimani" ;
+	<#hasNumber> "13"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamalgeria> ;
+	<#hasPosition> "Forward" .
+
+<#teamalgeria> foaf:member <#islam-slimani> .
+
+<#el-arabi-soudani> a foaf:Person ;
+	foaf:name "El Arabi Soudani" ;
+	<#hasNumber> "15"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamalgeria> ;
+	<#hasPosition> "Forward" .
+
+<#teamalgeria> foaf:member <#el-arabi-soudani> .
+
+<#liassine-cadamuro> a foaf:Person ;
+	foaf:name "Liassine Cadamuro" ;
+	<#hasNumber> "17"^^xsd:int ;
+	foaf:age "26"^^xsd:int ;
+	<#isMemberOf> <#teamalgeria> ;
+	<#hasPosition> "Defender" .
+
+<#teamalgeria> foaf:member <#liassine-cadamuro> .
+
+<#abdelmoumene-djabou> a foaf:Person ;
+	foaf:name "Abdelmoumene Djabou" ;
+	<#hasNumber> "18"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamalgeria> ;
+	<#hasPosition> "Forward" .
+
+<#teamalgeria> foaf:member <#abdelmoumene-djabou> .
+
+<#rafik-halliche> a foaf:Person ;
+	foaf:name "Rafik Halliche" ;
+	<#hasNumber> "5"^^xsd:int ;
+	foaf:age "27"^^xsd:int ;
+	<#isMemberOf> <#teamalgeria> ;
+	<#hasPosition> "Defender" .
+
+<#teamalgeria> foaf:member <#rafik-halliche> .
+
+<#rais-mbolhi> a foaf:Person ;
+	foaf:name "Rais Mbolhi" ;
+	<#hasNumber> "23"^^xsd:int ;
+	foaf:age "28"^^xsd:int ;
+	<#isMemberOf> <#teamalgeria> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamalgeria> foaf:member <#rais-mbolhi> .
+
+<#carl-medjani> a foaf:Person ;
+	foaf:name "Carl Medjani" ;
+	<#hasNumber> "12"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamalgeria> ;
+	<#hasPosition> "Defender" .
+
+<#teamalgeria> foaf:member <#carl-medjani> .
+
+<#mohamed-zemmamouche> a foaf:Person ;
+	foaf:name "Mohamed Zemmamouche" ;
+	<#hasNumber> "16"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamalgeria> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamalgeria> foaf:member <#mohamed-zemmamouche> .
+
+<#cedric-si-mohammed> a foaf:Person ;
+	foaf:name "Cedric Si Mohammed" ;
+	<#hasNumber> "1"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamalgeria> ;
+	<#hasPosition> "Goalkeeper" .
+
+<#teamalgeria> foaf:member <#cedric-si-mohammed> .
+
+<#djamel-mesbah> a foaf:Person ;
+	foaf:name "Djamel Mesbah" ;
+	<#hasNumber> "6"^^xsd:int ;
+	foaf:age "29"^^xsd:int ;
+	<#isMemberOf> <#teamalgeria> ;
+	<#hasPosition> "Defender" .
+
+<#teamalgeria> foaf:member <#djamel-mesbah> .
+
+<#hassan-yebda> a foaf:Person ;
+	foaf:name "Hassan Yebda" ;
+	<#hasNumber> "7"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamalgeria> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamalgeria> foaf:member <#hassan-yebda> .
+
+<#mehdi-mostefa> a foaf:Person ;
+	foaf:name "Mehdi Mostefa" ;
+	<#hasNumber> "22"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamalgeria> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamalgeria> foaf:member <#mehdi-mostefa> .
+
+<#medhi-lacen> a foaf:Person ;
+	foaf:name "Medhi Lacen" ;
+	<#hasNumber> "8"^^xsd:int ;
+	foaf:age "30"^^xsd:int ;
+	<#isMemberOf> <#teamalgeria> ;
+	<#hasPosition> "Midfielder" .
+
+<#teamalgeria> foaf:member <#medhi-lacen> .
+
+<#madjid-bouguerra> a foaf:Person ;
+	foaf:name "Madjid Bouguerra" ;
+	<#hasNumber> "2"^^xsd:int ;
+	foaf:age "31"^^xsd:int ;
+	<#isMemberOf> <#teamalgeria> ;
+	<#hasPosition> "Defender" .
+
+<#teamalgeria> foaf:member <#madjid-bouguerra> .
