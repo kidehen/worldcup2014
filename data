@@ -91,8 +91,8 @@ foaf:member <#WinnerOfQuarterFinalStage1>, <#WinnerOfQuarterFinalStage2>, <#Winn
 			
 <#FinalStage>
 a foaf:Group, <#WorldCupStage>  ;
-foaf:name "Semifinals" ;
-rdfs:comment """Semi Finals Stage""" ;
+foaf:name "Finals" ;
+rdfs:comment """Final Stage""" ;
 foaf:member <#WinnerOfSemiFinalStage1>, <#WinnerOfSemiFinalStage2> ;
 <#startDate> "2014-07-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
 <#endDate> "2014-07-13"^^<http://www.w3.org/2001/XMLSchema#date> .
