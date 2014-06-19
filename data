@@ -15,14 +15,15 @@
 rdf:type <http://xmlns.com/foaf/0.1/Document> ;
 xhv:alternate <WorldCup2014.txt> ;
 rdfs:label "World Cup 2014" ;
-rdfs:comment """Document comprised of RDF statements that desceribe World Cup 2014 Teams, Players, Groups, 
+rdfs:comment """Document comprised of RDF statements that describe World Cup 2014 Teams, Players, Groups, 
                 and Event Stages""" ;
 dcterms:created "2014-01-03"^^xsd:date ;
 dcterms:modified "2014-06-19"^^xsd:date ;
 dcterms:isReferencedBy <https://github.com/kidehen/worldcup2014> ;
 rdfs:seeAlso <https://github.com/kidehen/worldcup2014>, <http://linkeddata.uriburner.com/c/9DKP6NU3>, 
 			 <http://linkeddata.uriburner.com/c/9P5WMEE>,
-			 <http://kingsley.idehen.net/DAV/home/kidehen/Public/Linked%20Data%20Documents/WorldCup2014.ttl> ;
+			 <http://kingsley.idehen.net/DAV/home/kidehen/Public/Linked%20Data%20Documents/WorldCup2014.ttl>,
+			 <http://linkeddata.uriburner.com/about/id/entity/https/github.com/kidehen/worldcup2014> ;
 foaf:maker  <http://kingsley.idehen.net/dataspace/person/kidehen#this> ;
 xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
 cc:attributionName "Kingsley Idehen" ;
