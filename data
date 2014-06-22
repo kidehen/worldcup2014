@@ -18,7 +18,7 @@ rdfs:label "World Cup 2014" ;
 rdfs:comment """Document comprised of RDF statements that describe World Cup 2014 Teams, Players, Groups, 
                 and Event Stages""" ;
 dcterms:created "2014-01-03"^^xsd:date ;
-dcterms:modified "2014-06-19"^^xsd:date ;
+dcterms:modified "2014-06-22"^^xsd:date ;
 dcterms:isReferencedBy <https://github.com/kidehen/worldcup2014> ;
 rdfs:seeAlso <https://github.com/kidehen/worldcup2014>, <http://linkeddata.uriburner.com/c/9DKP6NU3>, 
 			 <http://linkeddata.uriburner.com/c/9P5WMEE>,
@@ -34,13 +34,14 @@ cc:attributionURL <http://kingsley.idehen.net/dataspace/person/kidehen#this>.
 <#WorldCup2014> 
 rdfs:label "World Cup 2104" ;
 a event:Event ;
+owl:sameAs <https://twitter.com/kidehen/status/476361756701257729#WorldCup> ;
 event:place <http://dbpedia.org/resource/Brazil> ;
 <#startDate> "2014-06-12"^^<http://www.w3.org/2001/XMLSchema#date> ;
 <#endDate> "2014-07-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
 <#hasStage> <#GroupStage>, <#EliminationStage>, <#QuarterFinalStage>, 
 			<#SemiFinalStage>, <#FinalStage> .
 
-## Stage Class Definition
+## Stage Class (Category) Definition
 
 <#WorldCupStage>
 rdfs:subClassOf foaf:Group ;
@@ -48,6 +49,11 @@ rdfs:label "World Cup Stage" ;
 rdfs:comment """A Stage during the World Cup comprised of member teams, for a period of time""" ;
 is rdfs:domain of foaf:member, <#startDate>, <#endDate> ;
 is rdfs:range of foaf:member .
+
+<#WorldCup2014Group>
+rdfs:subClassOf foaf:Group ;
+rdfs:label "World Cup 2014 Group" ;
+rdfs:comment """A World Cup 2014 Group comprised of member teams."""  .
 
 ## Start and End Date Property Definitions
 
@@ -128,7 +134,7 @@ foaf:member <#WinnerOfSemiFinalStage1>, <#WinnerOfSemiFinalStage2> ;
 	foaf:member <#julian-green> ;
 	rdfs:seeAlso <http://dbpedia.org/resource/USA_national_football_team> .
 
-<#G> a foaf:Group ;
+<#G> a foaf:Group, <#WorldCup2014Group> ;
 	foaf:member <#teamusa> ;
 	foaf:name "Group: G" .
 
@@ -342,7 +348,7 @@ foaf:member <#WinnerOfSemiFinalStage1>, <#WinnerOfSemiFinalStage2> ;
 	foaf:member <#jose-gimenez> ;
 	rdfs:seeAlso <http://dbpedia.org/resource/Uruguay_national_football_team> .
 
-<#D> a foaf:Group ;
+<#D> a foaf:Group, <#WorldCup2014Group> ;
 	foaf:member <#teamuruguay> ;
 	foaf:name "Group: D" .
 
@@ -556,7 +562,7 @@ foaf:member <#WinnerOfSemiFinalStage1>, <#WinnerOfSemiFinalStage2> ;
 	foaf:member <#josip-drmic> ;
 	rdfs:seeAlso <http://dbpedia.org/resource/Switzerland_national_football_team> .
 
-<#E> a foaf:Group ;
+<#E> a foaf:Group, <#WorldCup2014Group> ;
 	foaf:member <#teamswitzerland> ;
 	foaf:name "Group: E" .
 
@@ -770,7 +776,7 @@ foaf:member <#WinnerOfSemiFinalStage1>, <#WinnerOfSemiFinalStage2> ;
 	foaf:member <#koke> ;
 	rdfs:seeAlso <http://dbpedia.org/resource/Spain_national_football_team> .
 
-<#B> a foaf:Group ;
+<#B> a foaf:Group, <#WorldCup2014Group> ;
 	foaf:member <#teamspain> ;
 	foaf:name "Group: B" .
 
@@ -984,7 +990,7 @@ foaf:member <#WinnerOfSemiFinalStage1>, <#WinnerOfSemiFinalStage2> ;
 	foaf:member <#son-heungmin> ;
 	rdfs:seeAlso <http://dbpedia.org/resource/South_Korea_national_football_team> .
 
-<#H> a foaf:Group ;
+<#H> a foaf:Group, <#WorldCup2014Group> ;
 	foaf:member <#teamsouth-korea> ;
 	foaf:name "Group: H" .
 
@@ -1622,7 +1628,7 @@ foaf:member <#WinnerOfSemiFinalStage1>, <#WinnerOfSemiFinalStage2> ;
 	foaf:member <#kenneth-omeruo> ;
 	rdfs:seeAlso <http://dbpedia.org/resource/Nigeria_national_football_team> .
 
-<#F> a foaf:Group ;
+<#F> a foaf:Group, <#WorldCup2014Group> ;
 	foaf:member <#teamnigeria> ;
 	foaf:name "Group: F" .
 
@@ -2048,7 +2054,7 @@ foaf:member <#WinnerOfSemiFinalStage1>, <#WinnerOfSemiFinalStage2> ;
 	foaf:member <#diego-reyes> ;
 	rdfs:seeAlso <http://dbpedia.org/resource/Mexico_national_football_team> .
 
-<#A> a foaf:Group ;
+<#A> a foaf:Group, <#WorldCup2014Group> ;
 	foaf:member <#teammexico> ;
 	foaf:name "Group: A" .
 
@@ -2262,7 +2268,7 @@ foaf:member <#WinnerOfSemiFinalStage1>, <#WinnerOfSemiFinalStage2> ;
 	foaf:member <#gotoku-sakai> ;
 	rdfs:seeAlso <http://dbpedia.org/resource/Japan_national_football_team> .
 
-<#C> a foaf:Group ;
+<#C> a foaf:Group, <#WorldCup2014Group> ;
 	foaf:member <#teamjapan> ;
 	foaf:name "Group: C" .
 
