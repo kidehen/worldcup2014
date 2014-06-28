@@ -18,7 +18,7 @@ rdfs:label "World Cup 2014" ;
 rdfs:comment """Document comprised of RDF statements that describe World Cup 2014 Teams, Players, Groups, 
                 and Event Stages""" ;
 dcterms:created "2014-01-03"^^xsd:date ;
-dcterms:modified "2014-06-22"^^xsd:date ;
+dcterms:modified "2014-06-28"^^xsd:date ;
 dcterms:isReferencedBy <https://github.com/kidehen/worldcup2014> ;
 rdfs:seeAlso <https://github.com/kidehen/worldcup2014>, <http://linkeddata.uriburner.com/c/9DKP6NU3>, 
 			 <http://linkeddata.uriburner.com/c/9P5WMEE>,
@@ -34,7 +34,8 @@ cc:attributionURL <http://kingsley.idehen.net/dataspace/person/kidehen#this>.
 <#WorldCup2014> 
 rdfs:label "World Cup 2104" ;
 a event:Event ;
-owl:sameAs <https://twitter.com/kidehen/status/476361756701257729#WorldCup> ;
+owl:sameAs <https://twitter.com/kidehen/status/476361756701257729#WorldCup> ,
+			<https://twitter.com/hashtag/WorldCup#this>;
 event:place <http://dbpedia.org/resource/Brazil> ;
 <#startDate> "2014-06-12"^^<http://www.w3.org/2001/XMLSchema#date> ;
 <#endDate> "2014-07-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
@@ -82,10 +83,12 @@ foaf:member <#A>, <#B>, <#C>, <#D>, <#E>, <#F>, <#G>, <#H> ;
 a foaf:Group, <#WorldCupStage>  ;
 foaf:name "Elimination Stage 1" ;
 skos:altLabel "Round of 16" ;
-foaf:member <#WinnerOfA>, <#WinnerOfB>, <#WinnerOfC>, <#WinnerOfD>,
-			<#WinnerOfE>, <#WinnerOfF>, <#WinnerOfG>, <#WinnerOfH> ;
-<#startDate> "2014-07-02"^^<http://www.w3.org/2001/XMLSchema#date> ;
-<#endDate> "2014-07-26"^^<http://www.w3.org/2001/XMLSchema#date> .
+foaf:member <#teambrazil>, <#teammexico>, <#teamnetherlands>, <#teamchile>,
+			<#teamcolombia>, <#teamuruguay>, <#teamfrance>, <#teamnigeria>, 
+			<#teamalgeria>, <#teamgermany>, <#teamcosta-rica>, <#teamgreece>,
+			<#teamswitzerland>, <#teambelgium>, <#teamusa>, <#teamargentina>;
+<#startDate> "2014-06-28"^^<http://www.w3.org/2001/XMLSchema#date> ;
+<#endDate> "2014-07-01"^^<http://www.w3.org/2001/XMLSchema#date> .
 
 ## Quarter Finals Stage
 
